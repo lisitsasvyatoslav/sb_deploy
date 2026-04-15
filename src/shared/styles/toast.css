@@ -1,0 +1,41 @@
+/* Override react-toastify default styles */
+
+/* Container wrapper - remove default toast styles */
+.custom-toast-wrapper {
+  padding: 0 !important;
+  margin-bottom: 12px !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  min-height: auto !important;
+}
+
+/* Body wrapper - remove default padding */
+.custom-toast-body {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Remove default toast container padding */
+.Toastify__toast-container {
+  padding: 16px !important;
+  max-width: 520px !important;
+}
+
+/* Remove default toast animations that conflict with our design */
+.Toastify__toast {
+  width: 100% !important;
+  padding: 0 !important;
+  min-height: auto !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  margin-bottom: 0 !important;
+  background: transparent !important;
+}
+
+/* Ensure our custom toast takes full width */
+.Toastify__toast > div {
+  width: 100%;
+}
+
+

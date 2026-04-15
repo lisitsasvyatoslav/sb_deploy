@@ -1,0 +1,47 @@
+<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="1" y="1" width="34" height="34" rx="17" stroke="white" stroke-width="2" />
+    <g clip-path="url(#clip0)">
+        <mask id="mask0" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="32" height="32">
+            <circle cx="18" cy="18" r="16" fill="white" />
+        </mask>
+        <g mask="url(#mask0)">
+            <rect x="2" y="2" width="32" height="32" fill="#FFD300" />
+            <path
+                d="M15.7661 7.42578V9.18454H13.8795V10.9421H11.9786V12.7529H10.0765V18.7535C10.0765 18.7535 13.427 21.7613 13.9034 22.1979V28.5818H22.1386V22.2276C22.6103 21.7985 25.9464 18.7511 25.9464 18.7511V12.7529H24.0539V10.9594H22.1374V9.18454H20.2234V7.42578H15.7661Z"
+                fill="white" />
+            <path d="M16.8874 19.2807H15.2719V27.1827H16.8874V19.2807Z" fill="#FFD300" />
+            <path d="M18.8026 17.6484H17.1871V27.1827H18.8026V17.6484Z" fill="#FFD300" />
+            <path d="M20.7119 19.2807H19.0999V27.1827H20.7119V19.2807Z" fill="#FFD300" />
+            <path d="M13.0628 19.592L11.4497 18.1756V14.1322H13.0628V19.592Z" fill="black" />
+            <path d="M14.9805 21.3545L13.3613 19.7942V12.3399H14.9805V21.3545Z" fill="black" />
+            <path d="M16.8873 10.5775H15.2718V19.0314H16.8873V10.5775Z" fill="black" />
+            <path d="M18.8025 8.8125H17.187V17.2999H18.8025V8.8125Z" fill="black" />
+            <path d="M22.9255 19.592L24.5387 18.1756V14.1322H22.9255V19.592Z" fill="black" />
+            <path d="M21.0127 21.3545L22.6211 19.7942V12.3399H21.0127V21.3545Z" fill="black" />
+            <path d="M20.7118 10.5775H19.0999V19.0314H20.7118V10.5775Z" fill="black" />
+        </g>
+        <g clip-path="url(#clip1)">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M18 34C26.8366 34 34 26.8366 34 18C34 9.16344 26.8366 2 18 2C9.1634 2 2 9.16344 2 18C2 26.8366 9.1634 34 18 34ZM18 32.6667C26.1002 32.6667 32.6667 26.1002 32.6667 18C32.6667 9.89982 26.1002 3.33333 18 3.33333C9.8998 3.33333 3.3333 9.89982 3.3333 18C3.3333 26.1002 9.8998 32.6667 18 32.6667Z"
+                fill="url(#paint0_linear)" />
+            <circle cx="18" cy="18" r="14.6667" fill="url(#paint1_linear)" />
+        </g>
+    </g>
+    <defs>
+        <linearGradient id="paint0_linear" x1="2" y1="2" x2="34" y2="34" gradientUnits="userSpaceOnUse">
+            <stop stop-color="white" stop-opacity="0.15" />
+            <stop offset="1" stop-opacity="0.1" />
+        </linearGradient>
+        <linearGradient id="paint1_linear" x1="2" y1="2" x2="34" y2="34" gradientUnits="userSpaceOnUse">
+            <stop offset="0.1475" stop-opacity="0.15" />
+            <stop offset="0.500721" stop-color="white" stop-opacity="0" />
+            <stop offset="0.852707" stop-color="white" stop-opacity="0.15" />
+        </linearGradient>
+        <clipPath id="clip0">
+            <rect width="32" height="32" fill="white" transform="translate(2 2)" />
+        </clipPath>
+        <clipPath id="clip1">
+            <rect x="2" y="2" width="32" height="32" rx="16" fill="white" />
+        </clipPath>
+    </defs>
+</svg>

@@ -1,0 +1,60 @@
+{
+  "dropdown": {
+    "title": "Signals (Webhook url)",
+    "createButton": "Create signal",
+    "emptyState": "No signals created",
+    "tradingViewLink": "add to trading view",
+    "deactivate": "Deactivate signals",
+    "activate": "Activate signals"
+  },
+  "modal": {
+    "title": "Signal settings",
+    "close": "Close",
+    "create": "Create",
+    "save": "Save"
+  },
+  "toast": {
+    "boardNotSelected": "Board not selected",
+    "webhookNotGenerated": "Webhook URL not generated",
+    "created": "Signal created successfully!",
+    "createError": "Error creating signal",
+    "notFound": "Signal not found",
+    "updated": "Signal updated successfully!",
+    "updateError": "Error updating signal",
+    "urlCopied": "Webhook URL copied to clipboard"
+  },
+  "form": {
+    "showNotifications": "Show notifications",
+    "notificationsOn": "On",
+    "notificationsOff": "Off",
+    "notificationsAriaLabel": "Show notifications: {{state}}",
+    "generatingUrl": "Generating URL...",
+    "urlNotGenerated": "URL not generated",
+    "urlCopied": "URL copied",
+    "copyWebhookUrl": "Copy webhook URL",
+    "commentPlaceholder": "Comment for the signal",
+    "signalList": "Signal list",
+    "loadingSignals": "Loading signals...",
+    "loadError": "Error loading signals",
+    "noSignals": "No received signals",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "webhookRow": {
+    "urlNotGenerated": "URL not generated",
+    "copyUrl": "Copy webhook URL",
+    "urlUnavailable": "URL unavailable"
+  },
+  "toggle": {
+    "activated": "Signals activated",
+    "deactivated": "Signals deactivated",
+    "updateError": "Error updating signals"
+  },
+  "profileMenu": {
+    "profileSettings": "Profile settings",
+    "gridView": "Grid view",
+    "darkTheme": "Dark theme",
+    "lightTheme": "Light theme",
+    "logout": "Log out"
+  }
+}

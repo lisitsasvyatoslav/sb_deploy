@@ -1,0 +1,1 @@
+export { IdeasGridView } from './IdeasGridView';

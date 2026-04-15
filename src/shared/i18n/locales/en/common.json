@@ -1,0 +1,574 @@
+{
+  "nav": {
+    "boards": "Boards",
+    "portfolios": "Portfolios",
+    "strategies": "Strategies",
+    "overview": "Overview",
+    "portfolio": "Portfolio",
+    "ideas": "Ideas",
+    "execution": "Execution",
+    "training": "Training",
+    "strategiesCatalog": "Strategies Catalog"
+  },
+  "sidebar": {
+    "profile": "Profile",
+    "showPanel": "Show panel",
+    "collapsePanel": "Collapse panel",
+    "localization": "Language",
+    "explore": "Explore",
+    "aiChat": "AI Chat",
+    "settings": "Settings",
+    "switchToRu": "Switch to Russian",
+    "switchToEn": "Switch to English",
+    "switchRegionToUs": "Switch to US region",
+    "switchRegionToRu": "Switch to RU region",
+    "login": "Log in",
+    "telegramChannel": "Telegram Channel",
+    "discordServer": "Join our Discord",
+    "mainNavigation": "Main navigation",
+    "connectBrokerHint": "Connect your account to work with assets",
+    "connectBroker": "Connect",
+    "support": "Support"
+  },
+  "theme": {
+    "light": "Light theme",
+    "system": "System theme",
+    "dark": "Dark theme"
+  },
+  "pagination": {
+    "showing": "Showing {{count}} of {{total}} {{itemName}}",
+    "previous": "\u2190 Back",
+    "next": "Forward \u2192",
+    "pageOf": "Page {{current}} of {{total}}",
+    "defaultItemName": "items"
+  },
+  "cookie": {
+    "textBefore": "This site processes user data using cookies in accordance with the ",
+    "policyLinkText": "Data Processing Rules",
+    "textAfter": ". By clicking Accept, you consent to the processing of personal data.",
+    "accept": "Accept"
+  },
+  "emptyState": {
+    "title": "A cool feature is coming soon",
+    "subtitle": "We'll let you know when everything is ready"
+  },
+  "loading": "Loading...",
+  "errorLoading": "Loading error",
+  "search": {
+    "placeholder": "Search",
+    "clear": "Clear"
+  },
+  "modal": {
+    "askAI": "Ask AI",
+    "collapse": "Collapse",
+    "expand": "Expand",
+    "close": "Close",
+    "untitled": "Untitled",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "create": "Create"
+  },
+  "editor": {
+    "editLinkPrompt": "Edit link (leave empty to remove)",
+    "enterUrlPrompt": "Enter URL",
+    "insertAttachment": "Insert attachment",
+    "insertFile": "File",
+    "insertImage": "Image",
+    "insertLink": "Link",
+    "insertLinkCaption": "Paste a URL",
+    "upTo": "up to",
+    "uploading": "Uploading...",
+    "deleteFileTitle": "Delete file?",
+    "deleteFileSubtitle": "The file \"{{filename}}\" will be removed from the note.",
+    "deleteFileConfirm": "Delete",
+    "deleteFileCancel": "Cancel",
+    "unknownFile": "Unknown file",
+    "previousFile": "Previous file",
+    "nextFile": "Next file",
+    "collapseFile": "Collapse file",
+    "expandFile": "Expand file",
+    "askAI": "Ask AI",
+    "deleteFile": "Delete file",
+    "previewNotAvailable": "Preview not available",
+    "officePreviewUnavailable": "Preview not available for Office documents",
+    "downloadFile": "Download file",
+    "toolbar": {
+      "bold": "Bold (Ctrl+B)",
+      "italic": "Italic (Ctrl+I)",
+      "strikethrough": "Strikethrough",
+      "underline": "Underline (Ctrl+U)",
+      "link": "Link",
+      "bulletList": "Bullet list",
+      "numberedList": "Numbered list",
+      "delete": "Delete",
+      "askAI": "Ask AI"
+    }
+  },
+  "menu": {
+    "more": "More..."
+  },
+  "welcome": {
+    "login": "Sign in",
+    "allRightsReserved": "All rights reserved.",
+    "close": "Close",
+    "sparkleLoadError": "Failed to load scenario",
+    "sendError": "An error occurred. Please try again.",
+    "sendDetailError": "Failed to send message. Please try again.",
+    "aiChat": "AI Chat",
+    "newChat": "New Chat"
+  },
+  "mainPage": {
+    "boards": "Boards",
+    "createBoard": "Create board",
+    "createBoardError": "Failed to create board. Please try again."
+  },
+  "ideas": {
+    "title": "Ideas",
+    "createBoard": "Create board",
+    "menuAriaLabel": "Idea menu",
+    "duplicateSuccess": "Board duplicated successfully",
+    "duplicateError": "Failed to duplicate board",
+    "deleteSuccess": "Board deleted successfully",
+    "deleteError": "Failed to delete board",
+    "contextMenu": {
+      "askAI": "Ask AI",
+      "rename": "Rename",
+      "duplicate": "Duplicate",
+      "copyLink": "Copy link",
+      "delete": "Delete",
+      "publishToMarketplace": "Publish to marketplace",
+      "edit": "Edit",
+      "cancel": "Cancel",
+      "confirmTitle": "Delete \"{{name}}\"?",
+      "confirmBody": "This action cannot be undone.",
+      "confirmDelete": "Delete"
+    },
+    "deleteBoard": {
+      "title": "Delete board",
+      "body": "Are you sure you want to delete this board? This action cannot be undone.",
+      "cancel": "Cancel",
+      "confirm": "Delete",
+      "confirming": "Deleting...",
+      "closeAriaLabel": "Close"
+    }
+  },
+  "strategiesCatalog": {
+    "page": {
+      "title": "Strategies Catalog",
+      "profileMatchHint": "Strategies are sorted by match with your profile. Details are in the chat on the left."
+    },
+    "aiBlock": {
+      "imageAlt": "Strategies card stack",
+      "bubbleText": "Let's figure it out!",
+      "catalogBadge": "150+ strategies in the catalog",
+      "title": "No need to browse everything manually",
+      "description": "There are a lot of strategies, and choosing among them can be difficult. We can help: just press the button and AI will suggest options matching your trading style.",
+      "pickWithAi": "Pick a strategy with AI",
+      "questionsHint": "4 short questions -> 3-5 best strategies"
+    },
+    "tabs": {
+      "currentSelection": "Current selection",
+      "savedSelections": "My selections",
+      "saveSelection": "Save selection"
+    },
+    "filters": {
+      "searchPlaceholder": "Search",
+      "sort": {
+        "byProfitability": "By profitability",
+        "oldest": "Oldest",
+        "name": "Name"
+      }
+    },
+    "connectModal": {
+      "redirectTitle": "To connect a strategy, you will be redirected to comon.ru",
+      "brokerRequired": "To connect a strategy, you need a brokerage account with Finam",
+      "goToComon": "Go",
+      "openFinamAccount": "Open a Finam account"
+    },
+    "card": {
+      "author": "Author",
+      "yield": "Yield",
+      "risk": "Risk",
+      "riskConservative": "Conservative",
+      "riskModerate": "Moderate",
+      "riskAggressive": "Aggressive",
+      "draft": "Draft",
+      "chart": "Strategy chart",
+      "subscribers": "{{count}} subscribers",
+      "minAmount": "Min. amount",
+      "connectStrategy": "Connect strategy",
+      "discussWithAi": "Discuss with AI"
+    },
+    "detail": {
+      "backToCatalog": "Back to catalog",
+      "author": "Author",
+      "returnFor": "Return for:",
+      "seriesMoex": "MOEX Index",
+      "seriesSp500": "S&P 500",
+      "seriesRts": "RTS Index",
+      "statReturn": "Return",
+      "statMaxDrawdown": "Max drawdown",
+      "statProfitFactor": "Profit Factor",
+      "statSharpeRatio": "Sharpe Ratio",
+      "vs": "vs {{value}}",
+      "connect": "Connect",
+      "addToFavorites": "Add to favorites",
+      "addToBoard": "Add to board",
+      "strategyBadge": "Strategy",
+      "askAi": "Ask AI",
+      "more": "More",
+      "collapse": "Collapse",
+      "expand": "Expand",
+      "share": "Share",
+      "close": "Close",
+      "profitability": "Profitability",
+      "risk": "Risk",
+      "riskAggressive": "Aggressive",
+      "riskModerate": "Moderate",
+      "riskConservative": "Conservative",
+      "minAmount": "Min. amount",
+      "maxDrawdown": "Max drawdown",
+      "subscribers": "Subscribers",
+      "createdDate": "Created date",
+      "followAccuracy": "Follow accuracy",
+      "tradeFrequency": "Trade frequency",
+      "tai": "TAI",
+      "capacity": "Capacity",
+      "allTime": "All time",
+      "strategy": "Strategy",
+      "myPortfolio": "My portfolio",
+      "selectPortfolio": "Select portfolio",
+      "hidePortfolio": "Hide portfolio",
+      "selectBenchmark": "Select benchmark",
+      "compositionTitle": "Strategy composition",
+      "compositionAsset": "Asset",
+      "compositionSector": "Sector",
+      "aiAnalysisTitle": "AI Analysis",
+      "connectionTitle": "Connection conditions",
+      "qualification": "Qualification",
+      "qualRequired": "For qualified investors",
+      "qualNotRequired": "Not required",
+      "investmentProfile": "Investment profile",
+      "riskCategory": "Risk category",
+      "requiredTests": "Required tests",
+      "riskKsur": "KSUR",
+      "riskKnur": "KNUR",
+      "riskKpur": "KPUR",
+      "availableTariffs": "Available auto-follow tariffs",
+      "allTariffs": "All tariffs",
+      "commissionNotice": "Transaction fees are also charged according to your brokerage account tariff",
+      "tariffsLink": "Tariffs"
+    },
+    "periods": {
+      "week": "Week",
+      "month": "Month",
+      "quarter": "Quarter",
+      "year": "Year",
+      "all": "All period"
+    }
+  },
+  "fileSize": {
+    "bytes": "{{size}} B",
+    "kilobytes": "{{size}} KB",
+    "megabytes": "{{size}} MB"
+  },
+  "attachment": {
+    "delete": "Delete",
+    "growth": "growth "
+  },
+  "topNav": {
+    "notifications": "Notifications"
+  },
+  "newsSidebar": {
+    "searchPlaceholder": "Search news",
+    "cancelSearch": "Close",
+    "filterSearchPlaceholder": "Search filters"
+  },
+  "selectBoardForNews": {
+    "title": "Add news to board",
+    "subtitle": "Select one or more boards to add the news to",
+    "searchPlaceholder": "Search",
+    "createNew": "Create board",
+    "dropHere": "Drop here",
+    "noBoards": "No boards",
+    "addToOne": "Add",
+    "addToMany": "Add to {{count}} boards",
+    "newsAdded": "News added to board",
+    "newsAddedToBoards": "News added to {{count}} boards",
+    "newsAddError": "Failed to add news"
+  },
+  "confirmAddNewsToBoard": {
+    "title": "Add news to board",
+    "subtitle": "The news will be added to the \"{{boardName}}\" board"
+  },
+  "newsWidgetModal": {
+    "title": "Select news filters",
+    "editTitle": "Edit feed filters",
+    "searchPlaceholder": "Search filters",
+    "tickerSearchPlaceholder": "Search tickers",
+    "cardTitle": "News Feed",
+    "closeAriaLabel": "Close",
+    "reset": "Reset",
+    "apply": "Apply",
+    "noResults": "Nothing found",
+    "loadingTickers": "Loading...",
+    "emptyTitle": "No matching news",
+    "emptyDescription": "Try changing the selected filters",
+    "changeFilters": "Change filters",
+    "tab": {
+      "filters": "Filters",
+      "tickers": "Tickers"
+    },
+    "columns": {
+      "instrument": "Instrument",
+      "currentPrice": "Price",
+      "daily": "1D",
+      "yearly": "1Y"
+    }
+  },
+  "clipboard": {
+    "copied": "Copied to clipboard",
+    "copyFailed": "Failed to copy to clipboard"
+  },
+  "speech": {
+    "notSupported": "Browser does not support speech recognition",
+    "error": "Speech recognition error: {{error}}"
+  },
+  "fileType": {
+    "pdf": "PDF document",
+    "text": "Text file",
+    "code": "Code file",
+    "image": "Image",
+    "office": "Office document",
+    "archive": "Archive",
+    "media": "Media file",
+    "unknown": "Unknown file"
+  },
+  "filePreviewError": {
+    "archiveNotSupported": "Archives are not supported for preview",
+    "mediaNotSupported": "Video and audio files are not supported for preview",
+    "typeNotSupported": "This file type is not supported for preview",
+    "previewUnavailable": "Preview unavailable"
+  },
+  "time": {
+    "justNow": "Just now",
+    "hoursAgo": "{{count}}h ago",
+    "daysAgo": "{{count}}d ago"
+  },
+  "table": {
+    "loadingMore": "Loading..."
+  },
+  "colorWidget": {
+    "resetColor": "Reset color",
+    "changeColor": "Change color"
+  },
+  "news": {
+    "title": "News",
+    "close": "Close",
+    "readOriginal": "Read on source"
+  },
+  "policy": {
+    "loadError": "Failed to load privacy policy",
+    "cookieLoadError": "Failed to load cookie policy",
+    "backToRegister": "Back to registration"
+  },
+  "performance": {
+    "title": "Performance",
+    "memory": "Memory:",
+    "mb": "MB",
+    "render": "Render:",
+    "ms": "ms",
+    "domNodes": "DOM nodes:"
+  },
+  "chart": {
+    "finamAuthError": "Finam authorization error (ga-cdn.finam.ru): {{message}}",
+    "finamAuthErrorDefault": "check network and service availability",
+    "loadTimeout": "Chart load timeout. Possible Finam authorization error (ga-cdn.finam.ru) or network issue — open browser console (F12).",
+    "loadError": "Chart load error",
+    "loadFailed": "Failed to load chart",
+    "loading": "Loading chart…",
+    "emptyTitle": "Charts will be displayed here",
+    "emptySubtitle": "To see them, add a broker"
+  },
+  "profile": {
+    "title": "Profile",
+    "settings": "Settings",
+    "connectBrokers": "Connect brokers",
+    "connectedBrokers": "Connected brokers",
+    "noBrokers": "No connected brokers",
+    "loadingBrokers": "Loading...",
+    "logout": "Log out",
+    "pleaseLogin": "Please sign in",
+    "close": "Close",
+    "email": "Email",
+    "brokerDeleted": "Deleted {{count}} broker connection(s)",
+    "restartOnboarding": "Restart onboarding"
+  },
+  "boardSections": {
+    "main": {
+      "title": "Ideas",
+      "createButtonLabel": "Create board",
+      "createDialogTitle": "Create new board",
+      "createDialogNameLabel": "Board name",
+      "createDialogNamePlaceholder": "Enter board name",
+      "createDialogDescriptionLabel": "Board description",
+      "createDialogDescriptionPlaceholder": "Enter board description"
+    },
+    "portfolio": {
+      "title": "Portfolios",
+      "boardsTitle": "Portfolio ideas",
+      "createButtonLabel": "Create board",
+      "createDialogTitle": "Create new portfolio",
+      "createDialogNameLabel": "Portfolio name",
+      "createDialogNamePlaceholder": "Enter portfolio name",
+      "createDialogDescriptionLabel": "Portfolio description",
+      "createDialogDescriptionPlaceholder": "Enter portfolio description",
+      "accountsTitle": "Accounts",
+      "connectBroker": "connect",
+      "expired": "Expired",
+      "connectionExpired": "Broker token has expired. Reconnect to update data"
+    },
+    "strategy": {
+      "title": "Strategies",
+      "createButtonLabel": "Create board",
+      "createDialogTitle": "Create new strategy",
+      "createDialogNameLabel": "Strategy name",
+      "createDialogNamePlaceholder": "Enter strategy name",
+      "createDialogDescriptionLabel": "Strategy description",
+      "createDialogDescriptionPlaceholder": "Enter strategy description"
+    }
+  },
+  "portfolioCatalog": {
+    "createFromData": {
+      "titleCreate": "Create a portfolio from your data",
+      "titleEdit": "Portfolio settings",
+      "subtitleCreate": "Name your portfolio and select instruments from your position history — the portfolio will only include those tickers.",
+      "subtitleEdit": "Change the name or instrument list. Saving updates the portfolio rules.",
+      "nameLabel": "Portfolio name",
+      "namePlaceholder": "New portfolio",
+      "tableSection": "Instruments from your data",
+      "searchPlaceholder": "Enter ticker symbol",
+      "selectedCount": "Instruments selected: {{count}}",
+      "selectPage": "Select all on this page",
+      "selectInstrument": "Select {{symbol}}",
+      "cancel": "Cancel",
+      "submitCreate": "Create",
+      "submitEdit": "Save",
+      "errorName": "Enter a portfolio name",
+      "errorInstruments": "Select at least one instrument",
+      "errorSave": "Could not save the portfolio. Try again.",
+      "loadError": "Could not load the portfolio.",
+      "successToastTitle": "Portfolio created successfully!",
+      "successToastCaption": "You can also add an analytical virtual portfolio to work with virtual data separately from your real holdings.",
+      "all": "All",
+      "noneSelected": "Not selected",
+      "brokersLabel": "Brokers",
+      "accountsLabel": "Accounts",
+      "periodLabel": "Period",
+      "instrumentsTitle": "Instruments"
+    },
+    "virtualCta": {
+      "title": "Add an analytical/virtual portfolio",
+      "description": "You can analyze assets without risks to your real portfolio"
+    },
+    "assetsCount_one": "{{count}} asset",
+    "assetsCount_other": "{{count}} assets",
+    "empty": {
+      "title": "No data",
+      "brokerDescription": "Connect a broker to effectively manage your assets.",
+      "connectBroker": "Connect broker",
+      "portfolioDescription": "Portfolios allow you to group assets in your accounts for analysis. Connect accounts first, then you can create portfolios.",
+      "connectAccount": "Connect account"
+    },
+    "menu": {
+      "edit": "Configure",
+      "hide": "Hide",
+      "delete": "Delete"
+    },
+    "deleteConnection": {
+      "title": "Delete broker",
+      "body": "Are you sure you want to delete \"{{name}}\"?\nThis action cannot be undone",
+      "warning": "All trade and account history will be permanently deleted"
+    },
+    "deleteAccount": {
+      "title": "Delete account",
+      "body": "Are you sure you want to delete account \"{{name}}\"?\nThis action cannot be undone",
+      "warning": "All trade history will be permanently deleted"
+    },
+    "loading": {
+      "title": "Loading data"
+    }
+  },
+  "publishToMarketplace": {
+    "title": "Publish strategy to marketplace",
+    "nameLabel": "Name",
+    "namePlaceholder": "Enter strategy name",
+    "strategyTypeLabel": "Strategy type",
+    "strategyTypePlaceholder": "Select strategy type",
+    "descriptionLabel": "Description",
+    "descriptionPlaceholder": "Enter strategy description",
+    "descriptionHint": "Describe the strategy in detail",
+    "submitButton": "Submit for moderation",
+    "cancelButton": "Cancel",
+    "successToast": "Strategy submitted for moderation",
+    "errorToast": "Failed to submit strategy. Please try again",
+    "publishButton": "Publish to marketplace",
+    "noDeploymentsWarning": "At least one deployment is required to publish the strategy",
+    "strategyTypes": {
+      "Trend": "Trend",
+      "MeanReversion": "Mean Reversion",
+      "Arbitrage": "Arbitrage",
+      "News": "News"
+    }
+  },
+  "strategyBinding": {
+    "bindButton": "Bind Comon strategies",
+    "bindingInProgress": "Binding...",
+    "boundStrategies": "Bound Comon strategies",
+    "noBindings": "No bound strategies",
+    "boundAt": "Bound {{date}}",
+    "callbackSuccess": "Strategies successfully bound!",
+    "callbackSuccessHint": "Selected strategies are linked to your account",
+    "callbackError": "Strategy binding error",
+    "callbackCancelled": "Binding cancelled",
+    "callbackInvalid": "Invalid callback",
+    "backToProfile": "Back to profile",
+    "goToBoundStrategies": "Go to bound strategies",
+    "viewAll": "All strategies →",
+    "tryAgain": "Try again",
+    "initError": "Failed to start binding. Please try later.",
+    "mockComon": {
+      "title": "Comon.ru (mock)",
+      "subtitle": "Temporary page — simulates strategy selection on comon.ru",
+      "selectStrategies": "Select strategies to bind",
+      "confirm": "Confirm selection",
+      "cancel": "Cancel",
+      "selected": "Selected: {{count}}"
+    }
+  },
+  "mobileStub": {
+    "title": "We don't have a mobile version yet",
+    "subtitle": "The full functionality of the service is available on a computer",
+    "sendLink": "Send link",
+    "copyLink": "Copy link",
+    "copied": "Copied"
+  },
+  "support": {
+    "title": "Contact Support",
+    "name": "Name",
+    "email": "Email",
+    "reason": "Reason",
+    "reasonPlaceholder": "Select a reason",
+    "reasonBug": "Report a bug",
+    "reasonIdeas": "Ideas and suggestions",
+    "reasonGeneral": "General question",
+    "message": "Message",
+    "messagePlaceholder": "Describe your question or issue...",
+    "emailHint": "Send a request via email:",
+    "emailCopied": "Email copied to clipboard",
+    "cancel": "Cancel",
+    "submit": "Submit",
+    "success": "Support request sent successfully",
+    "error": "Failed to send support request"
+  }
+}

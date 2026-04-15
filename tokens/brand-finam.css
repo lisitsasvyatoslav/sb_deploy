@@ -1,0 +1,28 @@
+/* Brand: Finam — default brand identity */
+[data-brand="finam"] {
+  --brand-primary: #7863F6;
+  --brand-primary-hover: #6A53E8;
+  --brand-primary-light: rgba(120, 99, 246, 0.08);
+  --brand-primary-hover-bg: rgba(120, 99, 246, 0.08);
+  --brand-primary-active-bg: rgba(111, 97, 255, 0.12);
+  --brand-primary-glow: rgba(163, 156, 251, 0.5);
+  --brand-secondary: #6A46D4;
+
+  /* Tokens consumed by globals.css (::selection) and TradingIdeaOuterHeader */
+  --brand-base: #7863F6;
+  --brand-bg: #7863F61F;
+  --brand-bg_deep: #7863F652;
+}
+
+[data-brand="finam"][data-theme="dark"] {
+  --brand-primary: #8A7CF8;
+  --brand-primary-hover: #9B8FFA;
+  --brand-primary-light: rgba(138, 124, 248, 0.12);
+  --brand-primary-hover-bg: rgba(138, 124, 248, 0.12);
+  --brand-primary-active-bg: rgba(138, 124, 248, 0.16);
+  --brand-primary-glow: rgba(138, 124, 248, 0.5);
+
+  --brand-base: #8A7CF8;
+  --brand-bg: #7863F61F;
+  --brand-bg_deep: #7863F652;
+}

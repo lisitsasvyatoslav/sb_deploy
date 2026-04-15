@@ -1,0 +1,25 @@
+/**
+ * Blur CSS Variables
+ * Auto-generated from Figma Effect Styles API.
+ * DO NOT EDIT — run: npm run update-tokens
+ *
+ * Generated: 2026-04-01T16:02:45.010Z
+ *
+ * Usage: var(--blur-medium), etc.
+ * Tailwind: backdrop-blur-medium, blur-medium, etc.
+ */
+
+:root {
+  --blur-medium: 24px;
+  --blur-high: 36px;
+  --blur-extra: 80px;
+  --blur-normal: 12px;
+  --blur-ultra: 120px;
+  --blur-low: 4px;
+  --blur-effects-modal: 80px;
+  --blur-effects-panel: 80px;
+  --blur-progressiveblur-bottom-normal: 24px;
+  --blur-progressiveblur-bottom-medium: 40px;
+  --blur-progressiveblur-top-medium: 0px;
+  --blur-progressiveblur-top-normal: 0px;
+}

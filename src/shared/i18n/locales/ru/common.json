@@ -1,0 +1,576 @@
+{
+  "nav": {
+    "boards": "Доски",
+    "portfolios": "Портфели",
+    "strategies": "Стратегии",
+    "overview": "Обзор",
+    "portfolio": "Портфель",
+    "ideas": "Идеи",
+    "execution": "Исполнение",
+    "training": "Обучение",
+    "strategiesCatalog": "Каталог стратегий"
+  },
+  "sidebar": {
+    "profile": "Профиль",
+    "showPanel": "Показать панель",
+    "collapsePanel": "Свернуть панель",
+    "localization": "Язык",
+    "explore": "Explore",
+    "aiChat": "ИИ Чат",
+    "settings": "Настройки",
+    "switchToRu": "Переключить на русский",
+    "switchToEn": "Переключить на английский",
+    "switchRegionToUs": "Переключить на регион US",
+    "switchRegionToRu": "Переключить на регион RU",
+    "login": "Войти",
+    "telegramChannel": "Канал в Телеграм",
+    "discordServer": "Присоединиться к Discord",
+    "mainNavigation": "Основная навигация",
+    "connectBrokerHint": "Подключите свой счет для работы с активами",
+    "connectBroker": "Подключить",
+    "support": "Поддержка"
+  },
+  "theme": {
+    "light": "Светлая тема",
+    "system": "Системная тема",
+    "dark": "Тёмная тема"
+  },
+  "pagination": {
+    "showing": "Показано {{count}} из {{total}} {{itemName}}",
+    "previous": "← Назад",
+    "next": "Вперед →",
+    "pageOf": "Страница {{current}} из {{total}}",
+    "defaultItemName": "элементов"
+  },
+  "cookie": {
+    "textBefore": "На сайте осуществляется обработка пользовательских данных с использованием Cookie в соответствии с ",
+    "policyLinkText": "Правилами обработки пользовательских данных",
+    "textAfter": ". Нажимая кнопку Принять, вы соглашаетесь с обработкой персональных данных.",
+    "accept": "Принять"
+  },
+  "emptyState": {
+    "title": "Скоро здесь будет крутая фича",
+    "subtitle": "Сообщим вам, как всё будет готово"
+  },
+  "loading": "Загрузка...",
+  "errorLoading": "Ошибка загрузки",
+  "search": {
+    "placeholder": "Поиск",
+    "clear": "Очистить"
+  },
+  "modal": {
+    "askAI": "Спросить AI",
+    "collapse": "Свернуть",
+    "expand": "Развернуть",
+    "close": "Закрыть",
+    "untitled": "Без названия",
+    "confirm": "Подтвердить",
+    "cancel": "Отмена",
+    "create": "Создать"
+  },
+  "editor": {
+    "editLinkPrompt": "Редактировать ссылку (оставьте пустым, чтобы удалить)",
+    "enterUrlPrompt": "Введите URL",
+    "insertAttachment": "Вставка вложения",
+    "insertFile": "Файл",
+    "insertImage": "Изображение",
+    "insertLink": "Ссылка на сайт",
+    "insertLinkCaption": "Скопируйте и вставьте ссылку",
+    "upTo": "до",
+    "uploading": "Загрузка...",
+    "deleteFileTitle": "Удалить файл?",
+    "deleteFileSubtitle": "Файл «{{filename}}» будет удалён из заметки.",
+    "deleteFileConfirm": "Удалить",
+    "deleteFileCancel": "Отмена",
+    "unknownFile": "Неизвестный файл",
+    "previousFile": "Предыдущий файл",
+    "nextFile": "Следующий файл",
+    "collapseFile": "Свернуть файл",
+    "expandFile": "Развернуть файл",
+    "askAI": "Спросить AI",
+    "deleteFile": "Удалить файл",
+    "previewNotAvailable": "Предпросмотр недоступен",
+    "officePreviewUnavailable": "Предпросмотр для документов Office недоступен",
+    "downloadFile": "Скачать файл",
+    "toolbar": {
+      "bold": "Жирный (Ctrl+B)",
+      "italic": "Курсив (Ctrl+I)",
+      "strikethrough": "Зачёркнутый",
+      "underline": "Подчёркнутый (Ctrl+U)",
+      "link": "Ссылка",
+      "bulletList": "Маркированный список",
+      "numberedList": "Нумерованный список",
+      "delete": "Удалить",
+      "askAI": "Спросить ИИ"
+    }
+  },
+  "menu": {
+    "more": "Ещё..."
+  },
+  "welcome": {
+    "login": "Войти",
+    "allRightsReserved": "Все права защищены.",
+    "close": "Закрыть",
+    "sparkleLoadError": "Не удалось загрузить сценарий",
+    "sendError": "Произошла ошибка. Попробуйте позже.",
+    "sendDetailError": "Произошла ошибка при отправке сообщения. Попробуйте позже.",
+    "aiChat": "ИИ чат",
+    "newChat": "Новый чат"
+  },
+  "mainPage": {
+    "boards": "Доски",
+    "createBoard": "Создать доску",
+    "createBoardError": "Не удалось создать доску. Попробуйте ещё раз."
+  },
+  "ideas": {
+    "title": "Идеи",
+    "createBoard": "Создать доску",
+    "menuAriaLabel": "Меню идеи",
+    "duplicateSuccess": "Доска успешно скопирована",
+    "duplicateError": "Не удалось скопировать доску",
+    "deleteSuccess": "Доска успешно удалена",
+    "deleteError": "Не удалось удалить доску",
+    "contextMenu": {
+      "askAI": "Спросить AI",
+      "rename": "Переименовать",
+      "duplicate": "Дублировать",
+      "copyLink": "Скопировать ссылку",
+      "delete": "Удалить",
+      "publishToMarketplace": "Опубликовать в маркетплейс",
+      "edit": "Редактировать",
+      "cancel": "Отмена",
+      "confirmTitle": "Удалить «{{name}}»?",
+      "confirmBody": "Это действие нельзя отменить.",
+      "confirmDelete": "Удалить"
+    },
+    "deleteBoard": {
+      "title": "Удалить доску",
+      "body": "Вы уверены, что хотите удалить эту доску? Это действие нельзя отменить.",
+      "cancel": "Отменить",
+      "confirm": "Удалить",
+      "confirming": "Удаление...",
+      "closeAriaLabel": "Закрыть"
+    }
+  },
+  "strategiesCatalog": {
+    "page": {
+      "title": "Каталог стратегий",
+      "profileMatchHint": "Стратегии отсортированы по совпадению с вашим профилем. Подробности в чате слева."
+    },
+    "aiBlock": {
+      "imageAlt": "Картотека стратегий",
+      "bubbleText": "Давай разберемся!",
+      "catalogBadge": "150+ стратегий в каталоге",
+      "title": "Не нужно листать все вручную",
+      "description": "Стратегий действительно много, и выбрать среди них бывает непросто. Мы поможем: просто нажмите кнопку, и AI подберет вариант, который подойдет именно вашему стилю торговли.",
+      "pickWithAi": "Подобрать стратегию с AI",
+      "questionsHint": "4 коротких вопроса -> 3-5 лучших стратегий"
+    },
+    "tabs": {
+      "currentSelection": "Текущая подборка",
+      "savedSelections": "Мои подборки",
+      "saveSelection": "Сохранить подборку"
+    },
+    "filters": {
+      "searchPlaceholder": "Поиск",
+      "sort": {
+        "byProfitability": "По доходности",
+        "oldest": "Старые сначала",
+        "name": "По названию"
+      }
+    },
+    "connectModal": {
+      "redirectTitle": "Для подключения к стратегии вы будете перенаправлены на сайт comon.ru",
+      "brokerRequired": "Для подключения к стратегии необходимо иметь брокерский счет в Финам",
+      "goToComon": "Перейти",
+      "openFinamAccount": "Открыть счет в Финам"
+    },
+    "card": {
+      "author": "Автор",
+      "yield": "Доходность",
+      "risk": "Риск",
+      "riskConservative": "Консервативный",
+      "riskModerate": "Умеренный",
+      "riskAggressive": "Агрессивный",
+      "draft": "Черновик",
+      "chart": "График стратегии",
+      "subscribers": "{{count}} подписчика",
+      "minAmount": "Мин. сумма",
+      "connectStrategy": "Подключить стратегию",
+      "discussWithAi": "Обсудить с AI"
+    },
+    "detail": {
+      "backToCatalog": "Назад в каталог",
+      "author": "Автор",
+      "returnFor": "Доходность за:",
+      "seriesMoex": "Индекс MOEX",
+      "seriesSp500": "S&P 500",
+      "seriesRts": "Индекс РТС",
+      "statReturn": "Доходность",
+      "statMaxDrawdown": "Макс. просадка",
+      "statProfitFactor": "Profit Factor",
+      "statSharpeRatio": "Sharpe Ratio",
+      "vs": "vs {{value}}",
+      "connect": "Подключить",
+      "addToFavorites": "Добавить в избранное",
+      "addToBoard": "Добавить на доску",
+      "strategyBadge": "Стратегия",
+      "askAi": "Спросить AI",
+      "more": "Ещё",
+      "collapse": "Свернуть",
+      "expand": "Развернуть",
+      "share": "Поделиться",
+      "close": "Закрыть",
+      "profitability": "Доходность",
+      "risk": "Риск",
+      "riskAggressive": "Агрессивная",
+      "riskModerate": "Умеренная",
+      "riskConservative": "Консервативная",
+      "minAmount": "Мин. сумма",
+      "maxDrawdown": "Макс. просадка",
+      "subscribers": "Подписчиков",
+      "createdDate": "Дата создания",
+      "followAccuracy": "Точность следования",
+      "tradeFrequency": "Частота сделок",
+      "tai": "ИТА",
+      "capacity": "Емкость",
+      "allTime": "Всё время",
+      "strategy": "Стратегия",
+      "myPortfolio": "Мой портфель",
+      "selectPortfolio": "Выберите портфель",
+      "hidePortfolio": "Скрыть портфель",
+      "selectBenchmark": "Выберите бенчмарк",
+      "compositionTitle": "Состав стратегии",
+      "compositionAsset": "Актив",
+      "compositionSector": "Сектор",
+      "aiAnalysisTitle": "Анализ AI",
+      "connectionTitle": "Условия подключения",
+      "qualification": "Квалификация",
+      "qualRequired": "Для квалифицированных инвесторов",
+      "qualNotRequired": "Не требуется",
+      "investmentProfile": "Инвестиционный профиль",
+      "riskCategory": "Категория риска",
+      "requiredTests": "Необходимые тесты",
+      "riskKsur": "КСУР",
+      "riskKnur": "КНУР",
+      "riskKpur": "КПУР",
+      "availableTariffs": "Доступные тарифы Автоследования",
+      "allTariffs": "Все тарифы",
+      "commissionNotice": "Также взимается комиссия за сделки по тарифу на вашем брокерском счёте",
+      "tariffsLink": "Тарифы"
+    },
+    "periods": {
+      "week": "Неделя",
+      "month": "Месяц",
+      "quarter": "Квартал",
+      "year": "Год",
+      "all": "Весь период"
+    }
+  },
+  "fileSize": {
+    "bytes": "{{size}} Б",
+    "kilobytes": "{{size}} КБ",
+    "megabytes": "{{size}} МБ"
+  },
+  "attachment": {
+    "delete": "Удалить",
+    "growth": "прирост "
+  },
+  "topNav": {
+    "notifications": "Уведомления"
+  },
+  "newsSidebar": {
+    "searchPlaceholder": "Поиск новостей",
+    "cancelSearch": "Закрыть",
+    "filterSearchPlaceholder": "Поиск по фильтрам"
+  },
+  "selectBoardForNews": {
+    "title": "Добавить новость на доску",
+    "subtitle": "Выберите одну или несколько досок куда будет добавлена новость",
+    "searchPlaceholder": "Поиск",
+    "createNew": "Создать доску",
+    "dropHere": "Отпустите здесь",
+    "noBoards": "Нет досок",
+    "addToOne": "Добавить",
+    "addToMany": "Добавить на {{count}} доски",
+    "newsAdded": "Новость добавлена на доску",
+    "newsAddedToBoards": "Новость добавлена на {{count}} доски",
+    "newsAddError": "Не удалось добавить новость"
+  },
+  "confirmAddNewsToBoard": {
+    "title": "Добавить новость на доску",
+    "subtitle": "Новость будет добавлена на доску \"{{boardName}}\""
+  },
+  "newsWidgetModal": {
+    "title": "Выберите фильтры новостей",
+    "editTitle": "Изменить фильтры ленты",
+    "searchPlaceholder": "Поиск по фильтрам",
+    "tickerSearchPlaceholder": "Поиск по тикерам",
+    "cardTitle": "Новостная лента",
+    "closeAriaLabel": "Закрыть",
+    "reset": "Сброс",
+    "apply": "Применить",
+    "noResults": "Ничего не найдено",
+    "loadingTickers": "Загрузка...",
+    "emptyTitle": "Нет подходящих новостей",
+    "emptyDescription": "Измените выбранные фильтры",
+    "changeFilters": "Изменить фильтры",
+    "tab": {
+      "filters": "Фильтры",
+      "tickers": "Тикеры"
+    },
+    "columns": {
+      "instrument": "Инструмент",
+      "currentPrice": "Тек. цена",
+      "daily": "За день",
+      "yearly": "За год"
+    }
+  },
+  "clipboard": {
+    "copied": "Скопировано в буфер обмена",
+    "copyFailed": "Не удалось скопировать в буфер обмена"
+  },
+  "speech": {
+    "notSupported": "Браузер не поддерживает распознавание речи",
+    "error": "Ошибка распознавания речи: {{error}}"
+  },
+  "fileType": {
+    "pdf": "PDF документ",
+    "text": "Текстовый файл",
+    "code": "Файл кода",
+    "image": "Изображение",
+    "office": "Офисный документ",
+    "archive": "Архив",
+    "media": "Медиа файл",
+    "unknown": "Неизвестный файл"
+  },
+  "filePreviewError": {
+    "archiveNotSupported": "Архивы не поддерживаются для предпросмотра",
+    "mediaNotSupported": "Видео и аудио файлы не поддерживаются для предпросмотра",
+    "typeNotSupported": "Этот тип файла не поддерживается для предпросмотра",
+    "previewUnavailable": "Предпросмотр недоступен"
+  },
+  "time": {
+    "justNow": "Только что",
+    "hoursAgo": "{{count}}ч назад",
+    "daysAgo": "{{count}}д назад"
+  },
+  "table": {
+    "loadingMore": "Загрузка..."
+  },
+  "colorWidget": {
+    "resetColor": "Сбросить цвет",
+    "changeColor": "Изменить цвет"
+  },
+  "news": {
+    "title": "Новость",
+    "close": "Закрыть",
+    "readOriginal": "Читать на источнике"
+  },
+  "policy": {
+    "loadError": "Не удалось загрузить политику конфиденциальности",
+    "cookieLoadError": "Не удалось загрузить политику использования файлов cookie",
+    "backToRegister": "Назад к регистрации"
+  },
+  "performance": {
+    "title": "Производительность",
+    "memory": "Память:",
+    "mb": "МБ",
+    "render": "Рендер:",
+    "ms": "мс",
+    "domNodes": "DOM узлы:"
+  },
+  "chart": {
+    "finamAuthError": "Ошибка авторизации Finam (ga-cdn.finam.ru): {{message}}",
+    "finamAuthErrorDefault": "проверьте сеть и доступность сервиса",
+    "loadTimeout": "Таймаут загрузки графика. Возможна ошибка авторизации Finam (ga-cdn.finam.ru) или сети — откройте консоль браузера (F12).",
+    "loadError": "Ошибка загрузки графика",
+    "loadFailed": "Не удалось загрузить график",
+    "loading": "Загрузка графика…",
+    "emptyTitle": "Здесь будут отображаться графики",
+    "emptySubtitle": "Чтобы увидеть их, добавьте брокера"
+  },
+  "profile": {
+    "title": "Профиль",
+    "settings": "Настройки",
+    "connectBrokers": "Подключение брокеров",
+    "connectedBrokers": "Подключённые брокеры",
+    "noBrokers": "Нет подключённых брокеров",
+    "loadingBrokers": "Загрузка...",
+    "logout": "Выйти из профиля",
+    "pleaseLogin": "Пожалуйста, войдите в систему",
+    "close": "Закрыть",
+    "email": "Email",
+    "brokerDeleted": "Удалено подключений: {{count}}",
+    "restartOnboarding": "Перезапустить онбординг"
+  },
+  "boardSections": {
+    "main": {
+      "title": "Идеи",
+      "createButtonLabel": "Создать доску",
+      "createDialogTitle": "Создать новую доску",
+      "createDialogNameLabel": "Название доски",
+      "createDialogNamePlaceholder": "Введите название доски",
+      "createDialogDescriptionLabel": "Описание доски",
+      "createDialogDescriptionPlaceholder": "Введите описание доски"
+    },
+    "portfolio": {
+      "title": "Портфели",
+      "boardsTitle": "Идеи портфолио",
+      "createButtonLabel": "Создать доску",
+      "createDialogTitle": "Создать новый портфель",
+      "createDialogNameLabel": "Название портфеля",
+      "createDialogNamePlaceholder": "Введите название портфеля",
+      "createDialogDescriptionLabel": "Описание портфеля",
+      "createDialogDescriptionPlaceholder": "Введите описание портфеля",
+      "accountsTitle": "Счета",
+      "connectBroker": "подключить",
+      "expired": "Истёк",
+      "connectionExpired": "Токен брокера истёк. Переподключите для обновления данных"
+    },
+    "strategy": {
+      "title": "Стратегии",
+      "createButtonLabel": "Создать доску",
+      "createDialogTitle": "Создать новую стратегию",
+      "createDialogNameLabel": "Название стратегии",
+      "createDialogNamePlaceholder": "Введите название стратегии",
+      "createDialogDescriptionLabel": "Описание стратегии",
+      "createDialogDescriptionPlaceholder": "Введите описание стратегии"
+    }
+  },
+  "portfolioCatalog": {
+    "createFromData": {
+      "titleCreate": "Создайте портфель из имеющихся данных",
+      "titleEdit": "Настройка портфеля",
+      "subtitleCreate": "Укажите название и отметьте инструменты из вашей истории позиций — портфель будет собран только по ним.",
+      "subtitleEdit": "Измените название или состав инструментов. Сохранение обновит правила портфеля.",
+      "nameLabel": "Название портфеля",
+      "namePlaceholder": "Новый портфель",
+      "tableSection": "Инструменты из ваших данных",
+      "searchPlaceholder": "Введите название тикера",
+      "selectedCount": "Выбрано инструментов: {{count}}",
+      "selectPage": "Выбрать все на странице",
+      "selectInstrument": "Выбрать {{symbol}}",
+      "cancel": "Отмена",
+      "submitCreate": "Создать",
+      "submitEdit": "Сохранить",
+      "errorName": "Введите название портфеля",
+      "errorInstruments": "Выберите хотя бы один инструмент",
+      "errorSave": "Не удалось сохранить портфель. Попробуйте снова.",
+      "loadError": "Не удалось загрузить портфель.",
+      "successToastTitle": "Портфель создан успешно!",
+      "successToastCaption": "Вы также можете создать аналитический виртуальный портфель, в котором сможете управлять виртуальными данными.",
+      "all": "Все",
+      "noneSelected": "Не выбрано",
+      "brokersLabel": "Брокеры",
+      "accountsLabel": "Счета",
+      "periodLabel": "Период",
+      "instrumentsTitle": "Инструменты"
+    },
+    "virtualCta": {
+      "title": "Добавьте аналитический/виртуальный портфель",
+      "description": "В нем вы сможете проводить аналитику активов без рисков для реального портфеля"
+    },
+    "assetsCount_one": "{{count}} актив",
+    "assetsCount_few": "{{count}} актива",
+    "assetsCount_many": "{{count}} активов",
+    "assetsCount_other": "{{count}} активов",
+    "empty": {
+      "title": "Данные отсутствуют",
+      "brokerDescription": "Подключите брокера, чтобы эффективно управлять своими активами.",
+      "connectBroker": "Подключить брокера",
+      "portfolioDescription": "Портфели позволяют сгруппировать активы на ваших счетах для анализа, сначала подключите счета, после чего сможете сформировать портфели",
+      "connectAccount": "Подключить счет"
+    },
+    "menu": {
+      "edit": "Настроить",
+      "hide": "Скрыть",
+      "delete": "Удалить"
+    },
+    "deleteConnection": {
+      "title": "Удалить брокера",
+      "body": "Вы уверены, что хотите удалить \"{{name}}\"?\nЭто действие нельзя отменить",
+      "warning": "Вся история данных по сделкам и счетам будут удалены безвозвратно"
+    },
+    "deleteAccount": {
+      "title": "Удалить счёт",
+      "body": "Вы уверены, что хотите удалить счёт \"{{name}}\"?\nЭто действие нельзя отменить",
+      "warning": "Вся история данных по сделкам будет удалена безвозвратно"
+    },
+    "loading": {
+      "title": "Идет загрузка данных"
+    }
+  },
+  "publishToMarketplace": {
+    "title": "Публикация в маркетплейс стратегий",
+    "nameLabel": "Название",
+    "namePlaceholder": "Введите название стратегии",
+    "strategyTypeLabel": "Тип стратегии",
+    "strategyTypePlaceholder": "Выберите тип стратегии",
+    "descriptionLabel": "Описание",
+    "descriptionPlaceholder": "Введите описание стратегии",
+    "descriptionHint": "Расскажите о стратегии подробнее",
+    "submitButton": "Отправить на модерацию",
+    "cancelButton": "Отмена",
+    "successToast": "Стратегия отправлена на модерацию",
+    "errorToast": "Не удалось отправить стратегию. Попробуйте позже",
+    "publishButton": "Опубликовать в маркетплейс",
+    "noDeploymentsWarning": "Для публикации необходимо выполнить хотя бы один деплой стратегии",
+    "strategyTypes": {
+      "Trend": "Трендовая",
+      "MeanReversion": "Возврат к среднему",
+      "Arbitrage": "Арбитраж",
+      "News": "Новостная"
+    }
+  },
+  "strategyBinding": {
+    "bindButton": "Привязать стратегии Comon",
+    "bindingInProgress": "Привязка...",
+    "boundStrategies": "Привязанные стратегии Comon",
+    "noBindings": "Нет привязанных стратегий",
+    "boundAt": "Привязана {{date}}",
+    "callbackSuccess": "Стратегии успешно привязаны!",
+    "callbackSuccessHint": "Выбранные стратегии привязаны к вашему аккаунту",
+    "callbackError": "Ошибка привязки стратегий",
+    "callbackCancelled": "Привязка отменена",
+    "callbackInvalid": "Некорректный callback",
+    "backToProfile": "Вернуться в профиль",
+    "goToBoundStrategies": "Перейти к привязанным стратегиям",
+    "viewAll": "Все стратегии →",
+    "tryAgain": "Попробовать снова",
+    "initError": "Не удалось начать привязку. Попробуйте позже.",
+    "mockComon": {
+      "title": "Comon.ru (мок)",
+      "subtitle": "Временная страница — имитация выбора стратегий на comon.ru",
+      "selectStrategies": "Выберите стратегии для привязки",
+      "confirm": "Подтвердить выбор",
+      "cancel": "Отмена",
+      "selected": "Выбрано: {{count}}"
+    }
+  },
+  "mobileStub": {
+    "title": "У нас пока нет мобильной версии",
+    "subtitle": "Полный функционал сервиса доступен на компьютере",
+    "sendLink": "Отправить ссылку",
+    "copyLink": "Скопировать ссылку",
+    "copied": "Скопировано"
+  },
+  "support": {
+    "title": "Обращение в поддержку",
+    "name": "Имя",
+    "email": "Email",
+    "reason": "Причина обращения",
+    "reasonPlaceholder": "Выберите причину",
+    "reasonBug": "Сообщить об ошибке",
+    "reasonIdeas": "Идеи и пожелания",
+    "reasonGeneral": "Общий вопрос",
+    "message": "Текст запроса",
+    "messagePlaceholder": "Опишите ваш вопрос или проблему...",
+    "emailHint": "Отправить запрос через почту:",
+    "emailCopied": "Email скопирован в буфер обмена",
+    "cancel": "Отменить",
+    "submit": "Отправить",
+    "success": "Обращение успешно отправлено",
+    "error": "Не удалось отправить обращение"
+  }
+}

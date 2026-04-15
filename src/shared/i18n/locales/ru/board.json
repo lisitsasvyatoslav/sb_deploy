@@ -1,0 +1,329 @@
+{
+  "loading": "Загрузка доски...",
+  "error": "Ошибка загрузки доски",
+  "toast": {
+    "cardDeleted": "Карточка удалена успешно",
+    "cardsDeleted": "Карточки удалены успешно ({{count}})",
+    "cardCreated": "Карточка создана",
+    "cardUpdated": "Карточка обновлена",
+    "cardDeleteError": "Ошибка удаления карточки",
+    "cardCreateError": "Ошибка создания карточки",
+    "cardUpdateError": "Ошибка обновления карточки",
+    "filePasted": "Изображение {{fileName}} успешно вставлено",
+    "filePasteError": "Ошибка вставки изображения",
+    "docPasted": "Документ {{fileName}} успешно вставлен",
+    "docPasteError": "Ошибка вставки документа",
+    "fileUploaded": "Файл {{fileName}} успешно загружен",
+    "fileUploadError": "Ошибка загрузки файла {{fileName}}",
+    "positionSaveError": "Ошибка сохранения позиций",
+    "edgeCreateError": "Не удалось создать связь между карточками",
+    "cardSizeSaveError": "Не удалось сохранить размер карточки",
+    "cardColorSaveError": "Не удалось сохранить цвет карточки",
+    "newsAdded": "Новость добавлена на доску",
+    "newsAddError": "Ошибка добавления новости на доску",
+    "noFilesToUpload": "Нет файлов для загрузки",
+    "fileLoadError": "Ошибка загрузки файла",
+    "widgetDeleteForbidden": "Виджеты нельзя удалить",
+    "telegramComingSoon": "Telegram: скоро будет доступно",
+    "tradingviewComingSoon": "TradingView: скоро будет доступно",
+    "selectionModePressed": "Нажата кнопка: Режим выбора",
+    "strategyWidgetPressed": "Нажата кнопка: {{label}}",
+    "comingSoon": "скоро будет доступно",
+    "newsNotLoadedYet": "Новости ещё не загружены, попробуйте позже"
+  },
+  "alert": {
+    "oldFormatCard": "Эта карточка создана в старом формате. Пожалуйста, удалите её и создайте заново."
+  },
+  "deleteDialog": {
+    "titleSingle": "Удалить карточку?",
+    "titleMultiple": "Удалить карточки ({{count}})?",
+    "signalWarning": "<strong>Внимание!</strong> Среди выбранных карточек {{count}} с webhook-сигналом.",
+    "signalWarningDetail": "При удалении webhook перестанет работать, и история данных будет удалена.",
+    "cannotUndo": "Это действие нельзя отменить.",
+    "cancel": "Отмена",
+    "delete": "Удалить"
+  },
+  "contextMenu": {
+    "createNote": "Создать заметку",
+    "searchByTicker": "Поиск по тикеру"
+  },
+  "toolbar": {
+    "rename": "Переименовать",
+    "askAI": "Спросить AI",
+    "open": "Открыть",
+    "delete": "Удалить",
+    "changeFilters": "Изменить фильтры",
+    "download": "Скачать"
+  },
+  "export": {
+    "png": "Скачать как PNG",
+    "json": "Скачать как JSON",
+    "csv": "Скачать как CSV",
+    "success": "Файл экспортирован",
+    "error": "Ошибка экспорта"
+  },
+  "cardContextMenu": {
+    "duplicate": "Дублировать",
+    "askAI": "Спросить AI",
+    "download": "Скачать",
+    "delete": "Удалить",
+    "duplicateError": "Не удалось дублировать карточку"
+  },
+  "dragDrop": {
+    "dropToUpload": "Отпустите файл для загрузки",
+    "supportedFormats": "Поддерживаются: PDF, Excel, CSV"
+  },
+  "cardNode": {
+    "addTicker": "Добавить\nтикер"
+  },
+  "tradingParam": {
+    "entry": "Вход",
+    "exit": "Выход",
+    "risk": "Риск",
+    "position": "Позиция",
+    "editing": "Редактирование",
+    "badge": "ПАРАМЕТР",
+    "edit": "Редактировать",
+    "delete": "Удалить",
+    "save": "Сохранить",
+    "cancel": "Отменить",
+    "valuePrefix": "Значение: {{value}}",
+    "namePlaceholder": "Название параметра",
+    "valuePlaceholder": "Например: 1.2500, 2%, 100 лотов",
+    "descriptionPlaceholder": "Описание параметра"
+  },
+  "signalInstructions": {
+    "telegramTitle": "Сигнал Telegram",
+    "autoUpdateOnSignal": "Карточка будет обновляться автоматически при получении сигналов.",
+    "instructions": "Инструкция:",
+    "copyWebhook": "Скопируйте webhook URL из настроек",
+    "setupTelegram": "Настройте бота Telegram для отправки сигналов",
+    "tvCreateAlert": "В Trading View создайте Оповещение и в настройках вставьте скопированный webhook URL в соответствующее поле",
+    "tvWriteMessage": "Напишите текст в поле сообщения, который хотите получать, а так же не забудьте добавить важные вам Плейсхолдеры",
+    "autoUpdateNote": "Карточка обновляется автоматически при получении сигналов.",
+    "view": "Смотреть"
+  },
+  "screener": {
+    "title": "AI Скринер",
+    "marketRu": "🇷🇺 Рынок РФ",
+    "marketUs": "🇺🇸 Рынок США",
+    "top5": "Топ 5",
+    "top10": "Топ 10",
+    "top20": "Топ 20",
+    "top50": "Топ 50",
+    "loadError": "Не удалось загрузить данные",
+    "searching": "Поиск сигналов...",
+    "back": "Назад",
+    "minPotential": "Мин. потенциал",
+    "maxVolatility": "Макс. волатильность",
+    "minSharpe": "Мин. Шарп",
+    "maxDrawdown": "Макс. просадка",
+    "findSignals": "Найти сигналы",
+    "columns": {
+      "instrument": "ИНСТРУМЕНТ",
+      "horizon": "ГОРИЗОНТ",
+      "currentPrice": "ТЕК. ЦЕНА",
+      "target": "ЦЕЛЬ",
+      "drawdown": "ПРОСАДКА",
+      "volatility": "ВОЛАТ.",
+      "sharpe": "ШАРП"
+    },
+    "newSignals": "Новые сигналы",
+    "noSignals": "Сигналы не найдены",
+    "change": "Изменить"
+  },
+  "tradingIdea": {
+    "title": "Торговые идеи",
+    "columns": {
+      "instrument": "ИНСТРУМЕНТ",
+      "entry": "ВХОД",
+      "target": "ЦЕЛЬ",
+      "stop": "СТОП",
+      "lots": "ЛОТЫ",
+      "confidence": "УВЕР.",
+      "action": "ДЕЙСТВИЕ"
+    },
+    "buy": "Купить",
+    "sell": "Продать",
+    "emptyState": "Запустите стратегию для генерации торговых идей",
+    "download": "Скачать",
+    "downloadError": "Ошибка скачивания CSV"
+  },
+  "boardDate": {
+    "created": "Создано",
+    "updated": "Изменено",
+    "justNow": "только что",
+    "today": "сегодня",
+    "yesterday": "вчера",
+    "recently": "недавно"
+  },
+  "strategy": {
+    "promptLabel": "Промт для стратегии",
+    "promptPlaceholder": "Введите промт для стратегии...",
+    "run": "Запуск",
+    "backtest": "Бэктест",
+    "runError": "Ошибка запуска стратегии",
+    "widgets": {
+      "strategy": "Стратегия",
+      "forecasts": "Прогнозы",
+      "parameters": "Параметры",
+      "charts": "Графики",
+      "checklist": "Чеклист"
+    }
+  },
+  "ports": {
+    "ticker": "Тикер",
+    "period": "Период",
+    "price": "Цена",
+    "direction": "Направление",
+    "signal": "Сигнал"
+  },
+  "technical": {
+    "bullishReversal": "Бычий разворот",
+    "bullishRecovery": "Бычье восстановление",
+    "bullish": "Бычий",
+    "bullishWeakening": "Бычье ослабление",
+    "bearishReversal": "Медвежий разворот",
+    "bearishRecovery": "Медвежье восстановление",
+    "bearish": "Медвежий",
+    "bearishWeakening": "Медвежье ослабление",
+    "neutral": "Нейтрально",
+    "overbought": "Перекупленность",
+    "oversold": "Перепроданность"
+  },
+  "fallback": {
+    "newStrategy": "Новая стратегия",
+    "tradingIdea": "Торговые идеи",
+    "newSignals": "Новые сигналы",
+    "widget": "Виджет",
+    "newsFeed": "Новостная лента",
+    "file": "Файл",
+    "note": "Заметка",
+    "untitled": "Без названия",
+    "noDescription": "Нет описания",
+    "noPreview": "Нет превью",
+    "noAnswer": "Нет ответа",
+    "justNow": "только что",
+    "updatedAt": "Обновлено {{time}}"
+  },
+  "signalConstants": {
+    "tradingView": "Trading view сигнал",
+    "telegram": "Telegram сигнал",
+    "newSignal": "Новый сигнал"
+  },
+  "fileLoading": "Загрузка файла...",
+  "fileSize": {
+    "mb": "МБ",
+    "kb": "КБ",
+    "bytes": "Б"
+  },
+  "deployment": {
+    "previousRun": "Предыдущий запуск",
+    "run": "ЗАПУСК",
+    "nextRun": "Следующий запуск"
+  },
+  "relevance": {
+    "expired": "Идеи неактуальны, повторите запуск стратегии",
+    "active": "Идеи актуальны"
+  },
+  "noteDialog": {
+    "defaultTitle": "Заметка",
+    "noteUpdated": "Заметка обновлена",
+    "noteCreated": "Заметка создана",
+    "noteUpdateError": "Ошибка обновления заметки",
+    "noteCreateError": "Ошибка создания заметки",
+    "noteDeleted": "Заметка удалена",
+    "noteDeleteError": "Ошибка удаления заметки",
+    "duplicateError": "Не удалось дублировать заметку",
+    "aiChatError": "Ошибка при открытии AI чата",
+    "editorPlaceholder": "Напишите что-нибудь или добавьте вложения из «+»",
+    "titlePlaceholder": "Введите название...",
+    "delete": "Удалить",
+    "save": "Сохранить",
+    "create": "Создать"
+  },
+  "noteEditor": {
+    "saveAndClose": "Сохранить и закрыть",
+    "deleteError": "Ошибка удаления заметки"
+  },
+  "link": {
+    "noDescription": "Нет описания",
+    "noPreview": "Нет превью"
+  },
+  "bottomNav": {
+    "selectionMode": "Режим выбора",
+    "note": "Заметка",
+    "strategies": "Стратегии",
+    "signals": "Сигналы",
+    "ticker": "Тикер",
+    "news": "Новости",
+    "miniMap": "Мини-карта"
+  },
+  "keyboard": {
+    "nothingToCopy": "Нет выделенных карточек для копирования",
+    "nothingToCut": "Нет выделенных карточек для вырезания",
+    "clipboardEmpty": "Буфер обмена пуст",
+    "deleted": "Удалено {{total}} элементов ({{cards}} карточек, {{connections}} соединений)",
+    "nothingToDelete": "Нет выделенных элементов для удаления",
+    "selectionCleared": "Выделение очищено"
+  },
+  "ogCard": {
+    "link": "Ссылка",
+    "linkWithUrl": "Ссылка: {{url}}",
+    "sitePrefix": "Сайт: {{site}}",
+    "linkWithDate": "Ссылка {{date}}",
+    "processingLink": "Обрабатываем ссылку...",
+    "linkInserted": "Ссылка успешно вставлена как карточка",
+    "linkInsertedShort": "Ссылка вставлена как карточка",
+    "pastedText": "Вставленный текст ({{date}})",
+    "textInserted": "Текст успешно вставлен как карточка",
+    "pasteError": "Ошибка вставки текста"
+  },
+  "sseSignal": {
+    "goToCard": "Перейти к карточке"
+  },
+  "boardNotFound": "Доска не найдена",
+  "boardIdNotSpecified": "ID доски не указан",
+  "filePreview": {
+    "fileDefault": "Файл",
+    "fileTypeCard": "Карточка типа «файл»",
+    "fileNotFound": "Файл не найден",
+    "fileNotAttached": "У этой карточки нет прикрепленного файла.",
+    "unknown": "Неизвестно",
+    "openInNewTab": "Открыть в новой вкладке",
+    "openFile": "Открыть файл",
+    "previewUnavailable": "Предпросмотр недоступен для этого типа файла. Скачайте файл для просмотра.",
+    "fileInfo": "Информация о файле",
+    "fileType": "Тип:",
+    "fileSize": "Размер:",
+    "createdAt": "Создан:",
+    "downloading": "Загрузка...",
+    "download": "Скачать файл",
+    "close": "Закрыть",
+    "contentLoadError": "Не удалось загрузить содержимое файла",
+    "loadError": "Ошибка загрузки файла",
+    "notFound": "Файл не найден",
+    "downloadError": "Ошибка загрузки файла",
+    "imageLoadError": "Не удалось загрузить изображение"
+  },
+  "cardControls": {
+    "aiResponse": "ИИ ОТВЕТ"
+  },
+  "cardContent": {
+    "noDescription": "Нет описания",
+    "noAnswer": "Нет ответа",
+    "updated": "Обновлено {{date}}",
+    "justNow": "только что",
+    "tradingIdeas": "Торговые идеи",
+    "view": "Смотреть",
+    "newStrategy": "Новая стратегия",
+    "newSignals": "Новые сигналы",
+    "aiScreener": "AI Скринер"
+  },
+  "betaBanner": {
+    "description": "Это бета версия продукта, возможны баги. Обратная связь:",
+    "bugBounty": "Найдите ошибки и получите вип-билет на Trade Week",
+    "telegram": "Telegram-канал",
+    "webinar": "Вебинар"
+  }
+}

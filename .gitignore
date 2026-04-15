@@ -1,0 +1,91 @@
+# Dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# Storybook (собирается на Vercel: npm run storybook:build)
+storybook-static/
+
+# Production / analysis
+build/
+dist/
+*.tsbuildinfo
+
+# Environment and secrets (не коммитить ключи и URL с токенами)
+.env
+.env*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Vercel CLI (локальная привязка к проекту; токены не в репозитории)
+.vercel
+
+# Logs and debug
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Testing and coverage
+coverage/
+.nyc_output/
+
+# ESLint
+.eslintcache
+
+# OS and editors
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+
+# JetBrains / VS Code (личные настройки; при необходимости уберите строки ниже и закоммитьте общий .vscode)
+.idea/
+
+# Sentry (если появится CLI с токеном)
+.sentryclirc
+
+# Misc caches
+.cache/
+.parcel-cache/
+.turbo/
+.swc/
+
+# Playwright / e2e (если появятся)
+test-results/
+playwright-report/
+blob-report/
+
+# Локальные сертификаты и ключи
+*.pem
+*.p12
+
+# Storybook / инструменты (логи)
+debug-storybook.log
+storybook-debug.log
+*storybook.log
+
+# Редактор: локальная история файлов
+.history/
+
+# Временные каталоги
+tmp/
+temp/
+
+# --- Ускорение push: тяжёлые ассеты (только для отдельного репозитория «только Storybook») ---
+# В основном приложении эти пути НЕ игнорируйте — онбординг и auth их используют.
+# Если завели отдельный лёгкий репо под Vercel Storybook: раскомментируйте и выполните
+#   git rm -r --cached public/images/onboarding public/intro-light.png public/intro-dark.png public/intro.png
+# (и при необходимости другие крупные файлы из `git ls-files` по размеру).
+# public/images/onboarding/
+# public/intro-light.png
+# public/intro-dark.png
+# public/intro.png

@@ -1,0 +1,44 @@
+/* Brand: Lime — US market identity
+   Source: Figma LIMEX Design System, node 55063:5409
+   Primary green: #A9DC4D (rgb(169, 220, 77)) */
+
+/* TODO: Replace auto-generated light-theme values below with actual Figma tokens.
+   Currently derived from dark-theme relationships (sat −6%/L −5% for hover, etc.),
+   not sourced from Figma design system. */
+[data-brand="lime"] {
+  --brand-primary: #18F51E;
+  --brand-primary-hover: #11E418;
+  --brand-primary-light: rgba(24, 245, 30, 0.08);
+  --brand-primary-hover-bg: rgba(24, 245, 30, 0.08);
+  --brand-primary-active-bg: rgba(24, 245, 30, 0.12);
+  --brand-primary-glow: rgba(24, 245, 30, 0.5);
+  --brand-secondary: #14C726;
+
+  --brand-base: #18F51E;
+  --brand-bg: #18F51E1F;
+  --brand-bg_deep: #18F51E52;
+  --mind-accent: #18F51E;
+}
+
+[data-brand="lime"][data-theme="dark"] {
+  --brand-primary: #A9DC4D;
+  --brand-primary-hover: #9BCF3F;
+  --brand-primary-light: rgba(169, 220, 77, 0.08);
+  --brand-primary-hover-bg: rgba(169, 220, 77, 0.08);
+  --brand-primary-active-bg: rgba(169, 220, 77, 0.12);
+  --brand-primary-glow: rgba(169, 220, 77, 0.5);
+  --brand-secondary: #8FC234;
+
+    /* Override Figma-generated tokens that hardcode Finam purple */
+    --brand-base: #A9DC4D;
+    --brand-bg: #A9DC4D1F;
+    --brand-bg_deep: #A9DC4D52;
+    --mind-accent: #A9DC4D;
+}
+
+/* Shift purple dots in auth intro PNGs to lime green.
+   hue-rotate(195deg) ≈ purple(248°) → lime-green(83°).
+   Replace with dedicated lime intro images when available from Figma. */
+[data-brand="lime"] .auth-intro-bg {
+  filter: hue-rotate(195deg) saturate(1.4);
+}

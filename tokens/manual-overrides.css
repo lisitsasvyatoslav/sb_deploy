@@ -1,0 +1,154 @@
+/* ============================================================================
+   MANUAL THEME VARIABLES — values not yet in Figma
+   Maintained by hand. When a value moves into Figma, remove it from here.
+   Variables that map 1:1 to design system tokens use var() aliases so they
+   auto-switch with the theme and stay in sync with the source of truth.
+   ============================================================================ */
+
+:root {
+  /* Background (no DS equivalent — hand-tuned) */
+  --bg-base: #ECECF0;
+  --bg-card: #F2F2F7;
+  --bg-hover: #EEEEEE;
+  --bg-muted: #F8F7F7;
+  --bg-secondary: rgba(192, 192, 204, 0.32);
+
+  /* Text (no DS equivalent — hand-tuned) */
+  --text-primary: #121212;
+  --text-secondary: #666666;
+  --text-muted: #454545;
+  --text-base: #1A1A1F;
+  --text-accent: var(--mind-accent);
+
+  /* Borders (no DS equivalent — hand-tuned) */
+  --border-light: #F1F1F1;
+  --border-medium: #E0E0E0;
+  --border-card: #ECECEC;
+
+  /* Dots pattern */
+  --bg-dots-color: rgba(0, 0, 0, 0.1);
+
+  /* Switch toggle */
+  --switch-bg-off: var(--blackinverse-a12);
+  --switch-bg-on: var(--mind-accent);
+  --switch-thumb: rgba(255, 255, 255, 0.9);
+  --switch-dot: var(--mind-accent);
+
+  /* Surfaces → DS aliases */
+  --surface-low: var(--surfacelow-surfacelow1);
+  --surface-medium: var(--surfacemedium-surfacemedium);
+
+  /* Chat */
+  --chat-placeholder-hover: var(--brand-primary, #A39CFB);
+  --chat-input-bg: #FFFFFF;
+  --chat-bubble-bg: #F2F2F7;
+  --chat-bubble-text: #121212;
+
+  /* Semantic → DS aliases (auto-switch light/dark) */
+  --color-accent: var(--mind-accent);
+  --color-success: var(--status-success);
+  --color-warning: var(--status-warning);
+  --color-negative: var(--status-negative);
+  --color-error: var(--base-accent_accentdanger);
+
+  /* Button inversion → DS aliases (uppercase names used by auth components) */
+  --Black-Inverse-A100: var(--blackinverse-a100);
+  --Black-Inverse-A88: var(--blackinverse-a88);
+  --Black-Inverse-A72: var(--blackinverse-a72);
+  --Black-Inverse-A56: var(--blackinverse-a56);
+  --Black-Inverse-A32: var(--blackinverse-a32);
+  --Black-Inverse-A12: var(--blackinverse-a12);
+  --Black-Inverse-A8: var(--blackinverse-a8);
+  --Black-Inverse-A6: var(--blackinverse-a6);
+  --Black-Inverse-A4: var(--blackinverse-a4);
+  --Black-Inverse-A0: var(--blackinverse-a0);
+  --White-Inverse-A100: var(--whiteinverse-a100);
+
+  /* Shadow */
+  --shadow-modal: 0px 16px 32px 0px rgba(255, 255, 255, 0.15);
+
+  /* Auth */
+  --surface-white-low: var(--surfacewhite-low);
+  --bg-auth-page: var(--background-bgweb);
+  --mobile-auth-bg: var(--bg-base);
+
+  /* Sidebar */
+  --sidebar-bg: rgba(255, 255, 255, 0.95);
+  --sidebar-text: var(--base-gray_graybasebold);
+  --sidebar-text-active: var(--text-accent);
+  --sidebar-text-low: var(--base-gray_graybasestrong);
+  --accent-hover: var(--brand-primary-hover-bg, rgba(120, 99, 246, 0.08));
+  --accent-active: var(--brand-primary-active-bg, rgba(111, 97, 255, 0.12));
+
+  /* Welcome page */
+  --welcome-card-bg: rgba(255, 255, 255, 0.75);
+  --welcome-card-border: rgba(0, 0, 0, 0.03);
+  --welcome-diamond: var(--brand-primary-light, rgba(120, 99, 246, 0.15));
+  --welcome-ellipse-fade: #ECECF0;
+
+  /* Toolbar */
+  --toolbar-bg: var(--background-gray_low);
+
+  /* Outline → DS aliases */
+  --outline-primary_med_em: var(--mind-accent);
+}
+
+/* Dark theme — only vars that differ from their DS alias or have no DS equivalent */
+[data-theme="dark"] {
+  --bg-base: #0A0A0A;
+  --bg-card: #2C2C2E;
+  --bg-hover: #3B3B3D;
+  --bg-muted: #2C2C2E;
+  --bg-secondary: rgba(192, 192, 204, 0.32);
+
+  --text-primary: #FFFFFF;
+  --text-secondary: #AEAEB2;
+  --text-muted: #8E8E93;
+  --text-base: #FFFFFF;
+
+  --border-light: #3B3B3D;
+  --border-medium: #48484A;
+  --border-card: #3B3B3D;
+
+  --bg-dots-color: rgba(255, 255, 255, 0.15);
+
+  --switch-bg-on: var(--mind-accent);
+  --switch-thumb: rgba(28, 28, 31, 0.92);
+
+  /* Auth */
+  --mobile-auth-bg: #1C1C1F;
+
+  /* Chat */
+  --chat-placeholder-hover: var(--brand-primary, #A39CFB);
+  --chat-input-bg: #1C1C1F;
+  --chat-bubble-bg: #242424;
+  --chat-bubble-text: #FFFFFF;
+
+  /* Shadow */
+  --shadow-modal: 0px 16px 32px 0px rgba(4, 4, 5, 0.08);
+
+  /* Sidebar */
+  --sidebar-bg: #2C2C2E;
+  --sidebar-text: var(--base-gray_graybasebold);
+  --sidebar-text-active: var(--text-accent);
+  --sidebar-text-low: var(--base-gray_graybasestrong);
+  --accent-hover: var(--brand-primary-hover-bg, rgba(120, 99, 246, 0.12));
+  --accent-active: var(--brand-primary-active-bg, rgba(111, 97, 255, 0.16));
+
+  /* Welcome page */
+  --welcome-card-bg: rgba(30, 29, 40, 0.75);
+  --welcome-card-border: rgba(0, 0, 0, 0.03);
+  --welcome-diamond: var(--brand-primary-light, rgba(138, 124, 248, 0.25));
+  --welcome-ellipse-fade: #111111;
+
+  /* Surfaces — re-aliased so var() resolves against dark DS tokens */
+  --surface-low: var(--surfacelow-surfacelow1);
+  --surface-medium: var(--surfacemedium-surfacemedium);
+
+  /* Outline */
+  --outline-primary_med_em: var(--mind-accent);
+}
+
+/* Theme-aware utility classes (CSS-only, no JS hydration dependency) */
+[data-theme="dark"] .dark-theme\:block { display: block !important; }
+[data-theme="dark"] .dark-theme\:hidden { display: none !important; }

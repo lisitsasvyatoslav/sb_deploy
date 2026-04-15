@@ -1,0 +1,60 @@
+{
+  "dropdown": {
+    "title": "Сигналы (Webhook url)",
+    "createButton": "Создать сигнал",
+    "emptyState": "Нет созданных сигналов",
+    "tradingViewLink": "добавить в trading view",
+    "deactivate": "Деактивировать сигналы",
+    "activate": "Активировать сигналы"
+  },
+  "modal": {
+    "title": "Настройки сигнала",
+    "close": "Закрыть",
+    "create": "Создать",
+    "save": "Сохранить"
+  },
+  "toast": {
+    "boardNotSelected": "Доска не выбрана",
+    "webhookNotGenerated": "Webhook URL не сгенерирован",
+    "created": "Сигнал успешно создан!",
+    "createError": "Ошибка при создании сигнала",
+    "notFound": "Сигнал не найден",
+    "updated": "Сигнал успешно обновлен!",
+    "updateError": "Ошибка при обновлении сигнала",
+    "urlCopied": "Webhook URL скопирован в буфер обмена"
+  },
+  "form": {
+    "showNotifications": "Показывать уведомления",
+    "notificationsOn": "Включено",
+    "notificationsOff": "Выключено",
+    "notificationsAriaLabel": "Показывать уведомления: {{state}}",
+    "generatingUrl": "Генерация URL...",
+    "urlNotGenerated": "URL не сгенерирован",
+    "urlCopied": "URL скопирован",
+    "copyWebhookUrl": "Скопировать webhook URL",
+    "commentPlaceholder": "Комментарий к сигналу",
+    "signalList": "Список сигналов",
+    "loadingSignals": "Загрузка сигналов...",
+    "loadError": "Ошибка загрузки сигналов",
+    "noSignals": "Нет полученных сигналов",
+    "yes": "Да",
+    "no": "Нет"
+  },
+  "webhookRow": {
+    "urlNotGenerated": "URL не сгенерирован",
+    "copyUrl": "Скопировать webhook URL",
+    "urlUnavailable": "URL не доступен"
+  },
+  "toggle": {
+    "activated": "Сигналы активированы",
+    "deactivated": "Сигналы деактивированы",
+    "updateError": "Ошибка при обновлении сигналов"
+  },
+  "profileMenu": {
+    "profileSettings": "Настройки профиля",
+    "gridView": "Вид сетки",
+    "darkTheme": "Темная тема",
+    "lightTheme": "Светлая тема",
+    "logout": "Выйти"
+  }
+}

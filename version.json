@@ -1,0 +1,42 @@
+{
+  "version": "0.7.5",
+  "build_date": "2025-01-30",
+  "description": "Trading Diary Frontend - AI Chat System & SemanticTokenCalc Integration",
+  "features": [
+    "AI Chat System with SemanticTokenCalc",
+    "Backtesting Mode Integration",
+    "Drag & Drop file upload",
+    "Broker report cards",
+    "Interactive ReactFlow board",
+    "PDF content preview",
+    "Overlay file viewer",
+    "Material-UI components",
+    "Responsive design",
+    "Color Logging Display"
+  ],
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "reactflow": "11.10.1",
+    "@mui/material": "5.14.20",
+    "@mui/icons-material": "5.14.19",
+    "axios": "1.6.2",
+    "react-dropzone": "14.2.3",
+    "typescript": "4.9.5"
+  },
+  "components": [
+    "OverlayFilePreview",
+    "BrokerReportCardV2",
+    "BrokerReportNode",
+    "HomePageReactFlow"
+  ],
+  "api_integration": {
+    "base_url": "http://localhost:8000",
+    "endpoints": [
+      "/api/v0.6/broker-reports/upload",
+      "/api/v0.6/broker-reports/{id}",
+      "/api/v0.6/broker-reports/{id}/content",
+      "/api/v0.6/broker-reports/{id}/download"
+    ]
+  }
+}

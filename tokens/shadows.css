@@ -1,0 +1,21 @@
+/**
+ * Shadow CSS Variables
+ * Auto-generated from Figma Effect Styles API.
+ * DO NOT EDIT — run: npm run update-tokens
+ *
+ * Generated: 2026-04-01T16:02:45.010Z
+ *
+ * Usage: var(--shadow-200), var(--shadow-400), etc.
+ * Tailwind: shadow-200, shadow-400, etc.
+ */
+
+:root {
+  --shadow-100: 0px 1px 4px 0px rgba(4, 4, 5, 0.06);
+  --shadow-200: 0px 1px 4px 0px rgba(4, 4, 5, 0.04), 0px 1px 4px 0px rgba(4, 4, 5, 0.08);
+  --shadow-300: 0px 4px 4px -1px rgba(4, 4, 5, 0.04), 0px 4px 4px -1px rgba(4, 4, 5, 0.08);
+  --shadow-400: 0px 4px 4px -4px rgba(4, 4, 5, 0.06), 0px 16px 32px -4px rgba(4, 4, 5, 0.08);
+  --shadow-500: 0px 4px 4px -4px rgba(4, 4, 5, 0.04), 0px 16px 16px -8px rgba(4, 4, 5, 0.12);
+  --shadow-600: 0px 16px 32px -8px rgba(4, 4, 5, 0.08);
+  --shadow-effects-modal: 0px 16px 32px -8px rgba(4, 4, 5, 0.08);
+  --shadow-effects-panel: 0px 4px 4px -4px rgba(4, 4, 5, 0.06), 0px 16px 32px -4px rgba(4, 4, 5, 0.08);
+}

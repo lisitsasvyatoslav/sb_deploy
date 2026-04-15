@@ -1,0 +1,13 @@
+<svg width="129" height="36" viewBox="0 0 129 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- LIMEX green grid icon -->
+  <rect x="2" y="2" width="13" height="13" rx="2" fill="#A9DC4D"/>
+  <rect x="17" y="2" width="13" height="13" rx="2" fill="#A9DC4D"/>
+  <rect x="2" y="17" width="13" height="13" rx="2" fill="#A9DC4D"/>
+  <rect x="17" y="17" width="13" height="13" rx="2" fill="#A9DC4D"/>
+  <circle cx="32" cy="3" r="1.5" fill="#A9DC4D"/>
+  <circle cx="32" cy="29" r="1.5" fill="#A9DC4D"/>
+  <!-- LIMEX text (white for dark theme) -->
+  <text x="38" y="22" font-family="Inter, sans-serif" font-weight="700" font-size="18" fill="#FFFFFF">LIMEX</text>
+  <!-- DIARY text -->
+  <text x="38" y="31" font-family="Inter, sans-serif" font-weight="600" font-size="8" letter-spacing="0.8" fill="rgba(255, 255, 255, 0.56)">DIARY</text>
+</svg>

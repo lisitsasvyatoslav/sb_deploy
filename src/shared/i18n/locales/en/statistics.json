@@ -1,0 +1,119 @@
+{
+  "columns": {
+    "instrument": "INSTRUMENT",
+    "broker": "BROKER",
+    "account": "ACCOUNT",
+    "exchange": "EXCHANGE",
+    "quantity": "QTY",
+    "purchasePrice": "PURCHASE PRICE",
+    "currentPrice": "CURR. PRICE",
+    "changePct": "CHG. %",
+    "unrealizedPnl": "UNREALIZED P&L",
+    "realizedPnl": "REALIZED P&L",
+    "buySell": "buy/sell",
+    "price": "price",
+    "currency": "currency",
+    "tradeTotal": "Trade total",
+    "assetValue": "ASSET VALUE"
+  },
+  "columnsLower": {
+    "instrument": "Instrument",
+    "broker": "broker",
+    "account": "account",
+    "exchange": "Exchange",
+    "quantity": "qty",
+    "price": "price",
+    "currency": "currency",
+    "tradeTotal": "Trade total",
+    "assetValue": "Asset value"
+  },
+  "dateRange": {
+    "allTime": "All time",
+    "twoDays": "2 days",
+    "week": "Week",
+    "oneMonth": "1 month",
+    "sixMonths": "6 months",
+    "oneYear": "1 year",
+    "threeYears": "3 years"
+  },
+  "trades": {
+    "dateTime": "Date/Time",
+    "broker": "Broker",
+    "side": "Side",
+    "account": "Account",
+    "exchange": "Exchange",
+    "price": "Price",
+    "quantity": "Qty",
+    "amount": "Amount",
+    "loadingTrades": "Loading trades...",
+    "noTradesForFilters": "No trades for selected filters",
+    "trades": "trades",
+    "instrument": "Instrument",
+    "time": "Time",
+    "status": "Status",
+    "buy": "Buy",
+    "sell": "Sell",
+    "position": "Position",
+    "entryPrice": "Entry price",
+    "closePrice": "Close price",
+    "closeDate": "Close date",
+    "currentPrice": "Current price",
+    "tradingIdea": "Trading idea",
+    "ideaPrefix": "Idea",
+    "loading": "Loading...",
+    "askAIError": "Failed to open AI chat",
+    "noData": "No data",
+    "noTrades": "No trades",
+    "searchHistory": "Search trade history"
+  },
+  "brokers": {
+    "finam": "Finam",
+    "t-invest": "T-Invest",
+    "demo": "Demo"
+  },
+  "positions": {
+    "refreshData": "Refresh data",
+    "searchTicker": "Enter ticker name",
+    "history": "History",
+    "portfolio": "Portfolio",
+    "closeHistory": "Close history",
+    "openHistory": "Open history",
+    "noDataTitle": "No data available",
+    "noDataDescription": "Please connect broker tokens",
+    "firstLoadTitle": "Loading data",
+    "firstLoadDescription": "Please wait while broker data is being loaded into the system",
+    "connectBrokers": "Connect brokers",
+    "importFromCsv": "Import from CSV",
+    "pageOf": "of",
+    "save": "Save",
+    "configure": "Configure",
+    "virtualPortfolio": "Virtual #1",
+    "accountLabel": "Account"
+  },
+  "chart": {
+    "chartsWillAppear": "Charts will appear here",
+    "addBrokerToSee": "Add a broker to see them",
+    "noData": "No data"
+  },
+  "options": {
+    "showClosedPositions": "Show closed positions",
+    "autoRefresh": "Update every 5 min.",
+    "loadTrades": "Load trades",
+    "downloadTrades": "Download trades",
+    "brokersAccounts": "Brokers and accounts"
+  },
+  "brokerFilter": {
+    "loading": "Loading brokers...",
+    "error": "Failed to load brokers",
+    "noBrokers": "No connected brokers",
+    "addBroker": "Add broker"
+  },
+  "widgets": {
+    "comingSoon": "Widgets coming soon"
+  },
+  "askAI": "Ask AI",
+  "instrumentPicker": {
+    "emptyTitle": "No instruments found",
+    "emptyDescription": "Try changing filters or date range"
+  }
+}

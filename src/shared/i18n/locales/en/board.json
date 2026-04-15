@@ -1,0 +1,329 @@
+{
+  "loading": "Loading board...",
+  "error": "Error loading board",
+  "toast": {
+    "cardDeleted": "Card deleted successfully",
+    "cardsDeleted": "Cards deleted successfully ({{count}})",
+    "cardCreated": "Card created",
+    "cardUpdated": "Card updated",
+    "cardDeleteError": "Error deleting card",
+    "cardCreateError": "Error creating card",
+    "cardUpdateError": "Error updating card",
+    "filePasted": "Image {{fileName}} pasted successfully",
+    "filePasteError": "Error pasting image",
+    "docPasted": "Document {{fileName}} pasted successfully",
+    "docPasteError": "Error pasting document",
+    "fileUploaded": "File {{fileName}} uploaded successfully",
+    "fileUploadError": "Error uploading file {{fileName}}",
+    "positionSaveError": "Error saving positions",
+    "edgeCreateError": "Failed to create edge between cards",
+    "cardSizeSaveError": "Failed to save card size",
+    "cardColorSaveError": "Failed to save card color",
+    "newsAdded": "News added to board",
+    "newsAddError": "Error adding news to board",
+    "noFilesToUpload": "No files to upload",
+    "fileLoadError": "Error loading file",
+    "widgetDeleteForbidden": "Widgets cannot be deleted",
+    "telegramComingSoon": "Telegram: coming soon",
+    "tradingviewComingSoon": "TradingView: coming soon",
+    "selectionModePressed": "Button pressed: Selection mode",
+    "strategyWidgetPressed": "Button pressed: {{label}}",
+    "comingSoon": "coming soon",
+    "newsNotLoadedYet": "News not loaded yet, please try again later"
+  },
+  "alert": {
+    "oldFormatCard": "This card was created in the old format. Please delete it and create a new one."
+  },
+  "deleteDialog": {
+    "titleSingle": "Delete card?",
+    "titleMultiple": "Delete cards ({{count}})?",
+    "signalWarning": "<strong>Warning!</strong> Among the selected cards, {{count}} have a webhook signal.",
+    "signalWarningDetail": "Deleting will stop the webhook from working and the data history will be deleted.",
+    "cannotUndo": "This action cannot be undone.",
+    "cancel": "Cancel",
+    "delete": "Delete"
+  },
+  "contextMenu": {
+    "createNote": "Create note",
+    "searchByTicker": "Search by ticker"
+  },
+  "toolbar": {
+    "rename": "Rename",
+    "askAI": "Ask AI",
+    "open": "Open",
+    "delete": "Delete",
+    "changeFilters": "Edit filters",
+    "download": "Download"
+  },
+  "export": {
+    "png": "Download as PNG",
+    "json": "Download as JSON",
+    "csv": "Download as CSV",
+    "success": "File exported",
+    "error": "Export failed"
+  },
+  "cardContextMenu": {
+    "duplicate": "Duplicate",
+    "askAI": "Ask AI",
+    "download": "Download",
+    "delete": "Delete",
+    "duplicateError": "Failed to duplicate card"
+  },
+  "dragDrop": {
+    "dropToUpload": "Drop file to upload",
+    "supportedFormats": "Supported: PDF, Excel, CSV"
+  },
+  "cardNode": {
+    "addTicker": "Add\nticker"
+  },
+  "tradingParam": {
+    "entry": "Entry",
+    "exit": "Exit",
+    "risk": "Risk",
+    "position": "Position",
+    "editing": "Editing",
+    "badge": "PARAMETER",
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save",
+    "cancel": "Cancel",
+    "valuePrefix": "Value: {{value}}",
+    "namePlaceholder": "Parameter name",
+    "valuePlaceholder": "E.g.: 1.2500, 2%, 100 lots",
+    "descriptionPlaceholder": "Parameter description"
+  },
+  "signalInstructions": {
+    "telegramTitle": "Telegram Signal",
+    "autoUpdateOnSignal": "The card will be updated automatically when signals are received.",
+    "instructions": "Instructions:",
+    "copyWebhook": "Copy the webhook URL from settings",
+    "setupTelegram": "Set up a Telegram bot to send signals",
+    "tvCreateAlert": "In Trading View create an Alert and paste the copied webhook URL in the corresponding field in settings",
+    "tvWriteMessage": "Write the message text you want to receive, and don't forget to add the Placeholders important to you",
+    "autoUpdateNote": "The card is updated automatically when signals are received.",
+    "view": "View"
+  },
+  "screener": {
+    "title": "AI Screener",
+    "marketRu": "\ud83c\uddf7\ud83c\uddfa Russian Market",
+    "marketUs": "\ud83c\uddfa\ud83c\uddf8 US Market",
+    "top5": "Top 5",
+    "top10": "Top 10",
+    "top20": "Top 20",
+    "top50": "Top 50",
+    "loadError": "Failed to load data",
+    "searching": "Searching for signals...",
+    "back": "Back",
+    "minPotential": "Min. potential",
+    "maxVolatility": "Max. volatility",
+    "minSharpe": "Min. Sharpe",
+    "maxDrawdown": "Max. drawdown",
+    "findSignals": "Find signals",
+    "columns": {
+      "instrument": "INSTRUMENT",
+      "horizon": "HORIZON",
+      "currentPrice": "CUR. PRICE",
+      "target": "TARGET",
+      "drawdown": "DRAWDOWN",
+      "volatility": "VOLAT.",
+      "sharpe": "SHARPE"
+    },
+    "newSignals": "New signals",
+    "noSignals": "No signals found",
+    "change": "Change"
+  },
+  "tradingIdea": {
+    "title": "Trading Ideas",
+    "columns": {
+      "instrument": "INSTRUMENT",
+      "entry": "ENTRY",
+      "target": "TARGET",
+      "stop": "STOP",
+      "lots": "LOTS",
+      "confidence": "CONF.",
+      "action": "ACTION"
+    },
+    "buy": "Buy",
+    "sell": "Sell",
+    "emptyState": "Run the strategy to generate trading ideas",
+    "download": "Download",
+    "downloadError": "Error downloading CSV"
+  },
+  "boardDate": {
+    "created": "Created",
+    "updated": "Updated",
+    "justNow": "just now",
+    "today": "today",
+    "yesterday": "yesterday",
+    "recently": "recently"
+  },
+  "strategy": {
+    "promptLabel": "Strategy Prompt",
+    "promptPlaceholder": "Enter a prompt for the strategy...",
+    "run": "Run",
+    "backtest": "Backtest",
+    "runError": "Error running strategy",
+    "widgets": {
+      "strategy": "Strategy",
+      "forecasts": "Forecasts",
+      "parameters": "Parameters",
+      "charts": "Charts",
+      "checklist": "Checklist"
+    }
+  },
+  "ports": {
+    "ticker": "Ticker",
+    "period": "Period",
+    "price": "Price",
+    "direction": "Direction",
+    "signal": "Signal"
+  },
+  "technical": {
+    "bullishReversal": "Bullish reversal",
+    "bullishRecovery": "Bullish recovery",
+    "bullish": "Bullish",
+    "bullishWeakening": "Bullish weakening",
+    "bearishReversal": "Bearish reversal",
+    "bearishRecovery": "Bearish recovery",
+    "bearish": "Bearish",
+    "bearishWeakening": "Bearish weakening",
+    "neutral": "Neutral",
+    "overbought": "Overbought",
+    "oversold": "Oversold"
+  },
+  "fallback": {
+    "newStrategy": "New strategy",
+    "tradingIdea": "Trading Ideas",
+    "newSignals": "New Signals",
+    "widget": "Widget",
+    "newsFeed": "News Feed",
+    "file": "File",
+    "note": "Note",
+    "untitled": "Untitled",
+    "noDescription": "No description",
+    "noPreview": "No preview",
+    "noAnswer": "No answer",
+    "justNow": "just now",
+    "updatedAt": "Updated {{time}}"
+  },
+  "signalConstants": {
+    "tradingView": "Trading View signal",
+    "telegram": "Telegram signal",
+    "newSignal": "New signal"
+  },
+  "fileLoading": "Loading file...",
+  "fileSize": {
+    "mb": "MB",
+    "kb": "KB",
+    "bytes": "B"
+  },
+  "deployment": {
+    "previousRun": "Previous run",
+    "run": "RUN",
+    "nextRun": "Next run"
+  },
+  "relevance": {
+    "expired": "Ideas are outdated, rerun the strategy",
+    "active": "Ideas are active"
+  },
+  "noteDialog": {
+    "defaultTitle": "Note",
+    "noteUpdated": "Note updated",
+    "noteCreated": "Note created",
+    "noteUpdateError": "Error updating note",
+    "noteCreateError": "Error creating note",
+    "noteDeleted": "Note deleted",
+    "noteDeleteError": "Error deleting note",
+    "duplicateError": "Failed to duplicate note",
+    "aiChatError": "Error opening AI chat",
+    "editorPlaceholder": "Write something or add attachments from «+»",
+    "titlePlaceholder": "Enter title...",
+    "delete": "Delete",
+    "save": "Save",
+    "create": "Create"
+  },
+  "noteEditor": {
+    "saveAndClose": "Save and close",
+    "deleteError": "Failed to delete note"
+  },
+  "link": {
+    "noDescription": "No description",
+    "noPreview": "No preview"
+  },
+  "bottomNav": {
+    "selectionMode": "Selection mode",
+    "note": "Note",
+    "strategies": "Strategies",
+    "signals": "Signals",
+    "ticker": "Ticker",
+    "news": "News",
+    "miniMap": "Mini-map"
+  },
+  "keyboard": {
+    "nothingToCopy": "No selected cards to copy",
+    "nothingToCut": "No selected cards to cut",
+    "clipboardEmpty": "Clipboard is empty",
+    "deleted": "Deleted {{total}} elements ({{cards}} cards, {{connections}} connections)",
+    "nothingToDelete": "No selected elements to delete",
+    "selectionCleared": "Selection cleared"
+  },
+  "ogCard": {
+    "link": "Link",
+    "linkWithUrl": "Link: {{url}}",
+    "sitePrefix": "Site: {{site}}",
+    "linkWithDate": "Link {{date}}",
+    "processingLink": "Processing link...",
+    "linkInserted": "Link successfully inserted as card",
+    "linkInsertedShort": "Link inserted as card",
+    "pastedText": "Pasted text ({{date}})",
+    "textInserted": "Text successfully inserted as card",
+    "pasteError": "Error pasting text"
+  },
+  "sseSignal": {
+    "goToCard": "Go to card"
+  },
+  "boardNotFound": "Board not found",
+  "boardIdNotSpecified": "Board ID not specified",
+  "filePreview": {
+    "fileDefault": "File",
+    "fileTypeCard": "Card of type \"file\"",
+    "fileNotFound": "File not found",
+    "fileNotAttached": "This card has no attached file.",
+    "unknown": "Unknown",
+    "openInNewTab": "Open in new tab",
+    "openFile": "Open file",
+    "previewUnavailable": "Preview is not available for this file type. Download the file to view it.",
+    "fileInfo": "File information",
+    "fileType": "Type:",
+    "fileSize": "Size:",
+    "createdAt": "Created:",
+    "downloading": "Downloading...",
+    "download": "Download file",
+    "close": "Close",
+    "contentLoadError": "Failed to load file content",
+    "loadError": "Error loading file",
+    "notFound": "File not found",
+    "downloadError": "Error downloading file",
+    "imageLoadError": "Failed to load image"
+  },
+  "cardControls": {
+    "aiResponse": "AI RESPONSE"
+  },
+  "cardContent": {
+    "noDescription": "No description",
+    "noAnswer": "No answer",
+    "updated": "Updated {{date}}",
+    "justNow": "just now",
+    "tradingIdeas": "Trading Ideas",
+    "view": "View",
+    "newStrategy": "New Strategy",
+    "newSignals": "New signals",
+    "aiScreener": "AI Screener"
+  },
+  "betaBanner": {
+    "description": "This is a beta version, bugs may occur. Feedback:",
+    "bugBounty": "Find bugs and get a VIP ticket to Trade Week",
+    "telegram": "Telegram channel",
+    "webinar": "Webinar"
+  }
+}

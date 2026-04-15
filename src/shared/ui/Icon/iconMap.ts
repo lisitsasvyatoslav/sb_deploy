@@ -1,0 +1,163 @@
+import { FC, SVGProps } from 'react';
+
+import { IconVariant } from './Icon.types';
+
+type SvgComponent = FC<SVGProps<SVGSVGElement>>;
+type SvgLoader = () => Promise<{ default: SvgComponent }>;
+
+// Dynamic import loaders — each icon is loaded only when first used
+export const iconLoaders: Record<IconVariant, SvgLoader> = {
+  activeMark: () => import('./icons/activeMark.svg'),
+  activityOutline: () => import('./icons/activityOutline.svg'),
+  addBoard: () => import('./icons/addBoard.svg'),
+  adjustments: () => import('./icons/adjustments.svg'),
+  ai: () => import('./icons/ai.svg'),
+  aiBold: () => import('./icons/aiBold.svg'),
+  alertTriangle: () => import('./icons/alertTriangle.svg'),
+  archive: () => import('./icons/archive.svg'),
+  arrowLeft: () => import('./icons/arrowLeft.svg'),
+  arrowRight: () => import('./icons/arrowRight.svg'),
+  arrowUp: () => import('./icons/arrowUp.svg'),
+  attachement: () => import('./icons/attachement.svg'),
+  bell: () => import('./icons/bell.svg'),
+  bookmark: () => import('./icons/bookmark.svg'),
+  briefcase: () => import('./icons/briefcase.svg'),
+  brush: () => import('./icons/brush.svg'),
+  cam: () => import('./icons/cam.svg'),
+  chart: () => import('./icons/chart.svg'),
+  chartLine: () => import('./icons/chartLine.svg'),
+  chartPie: () => import('./icons/chartPie.svg'),
+  chevronDown: () => import('./icons/chevronDown.svg'),
+  chevronDownMicro: () => import('./icons/chevronDownMicro.svg'),
+  chevronDownSmall: () => import('./icons/chevronDownSmall.svg'),
+  chevronLeft: () => import('./icons/chevronLeft.svg'),
+  chevronLeftSmall: () => import('./icons/chevronLeftSmall.svg'),
+  chevronRight: () => import('./icons/chevronRight.svg'),
+  chevronRightMicro: () => import('./icons/chevronRightMicro.svg'),
+  chevronRightSmall: () => import('./icons/chevronRightSmall.svg'),
+  chevronUp: () => import('./icons/chevronUp.svg'),
+  chevronUpDown: () => import('./icons/chevronUpDown.svg'),
+  chevronUpSmall: () => import('./icons/chevronUpSmall.svg'),
+  close: () => import('./icons/close.svg'),
+  closeCircleBold: () => import('./icons/closeCircleBold.svg'),
+  closeMedium: () => import('./icons/closeMedium.svg'),
+  closeSmall: () => import('./icons/closeSmall.svg'),
+  collapse: () => import('./icons/collapse.svg'),
+  comment: () => import('./icons/comment.svg'),
+  copy: () => import('./icons/copy.svg'),
+  copyBold: () => import('./icons/copyBold.svg'),
+  cursor: () => import('./icons/cursor.svg'),
+  cursorBold: () => import('./icons/cursorBold.svg'),
+  discord: () => import('./icons/discord.svg'),
+  dislike: () => import('./icons/dislike.svg'),
+  doc: () => import('./icons/doc.svg'),
+  docBold: () => import('./icons/docBold.svg'),
+  docFull: () => import('./icons/docFull.svg'),
+  docOutline: () => import('./icons/docOutline.svg'),
+  docStroke: () => import('./icons/docStroke.svg'),
+  download: () => import('./icons/download.svg'),
+  edit: () => import('./icons/edit.svg'),
+  editBold: () => import('./icons/editBold.svg'),
+  editMicro: () => import('./icons/editMicro.svg'),
+  editNote: () => import('./icons/editNote.svg'),
+  exclamationMarkCircle: () => import('./icons/exclamationMarkCircle.svg'),
+  expand: () => import('./icons/expand.svg'),
+  eye: () => import('./icons/eye.svg'),
+  eyeHidden: () => import('./icons/eyeHidden.svg'),
+  finam: () => import('./icons/finam.svg'),
+  filter: () => import('./icons/filter.svg'),
+  flash: () => import('./icons/flash.svg'),
+  folder: () => import('./icons/folder.svg'),
+  global: () => import('./icons/global.svg'),
+  graduetionCap: () => import('./icons/graduetionCap.svg'),
+  grid: () => import('./icons/grid.svg'),
+  gridSmall: () => import('./icons/gridSmall.svg'),
+  home: () => import('./icons/home.svg'),
+  image: () => import('./icons/image.svg'),
+  infoMarkCircle: () => import('./icons/infoMarkCircle.svg'),
+  install: () => import('./icons/install.svg'),
+  language: () => import('./icons/language.svg'),
+  like: () => import('./icons/like.svg'),
+  lineChartOutline: () => import('./icons/lineChartOutline.svg'),
+  loader: () => import('./icons/loader.svg'),
+  loaderBlock: () => import('./icons/loaderBlock.svg'),
+  logout: () => import('./icons/logout.svg'),
+  map: () => import('./icons/map.svg'),
+  mapBold: () => import('./icons/mapBold.svg'),
+  mapFill: () => import('./icons/mapFill.svg'),
+  markerTools: () => import('./icons/markerTools.svg'),
+  megaphone: () => import('./icons/megaphone.svg'),
+  mic: () => import('./icons/mic.svg'),
+  more: () => import('./icons/more.svg'),
+  moreHorizontal: () => import('./icons/moreHorizontal.svg'),
+  newsWidget: () => import('./icons/newsWidget.svg'),
+  pause: () => import('./icons/pause.svg'),
+  picColor: () => import('./icons/picColor.svg'),
+  picColorNull: () => import('./icons/picColorNull.svg'),
+  pin: () => import('./icons/pin.svg'),
+  pinFilled: () => import('./icons/pinFilled.svg'),
+  placeHolder: () => import('./icons/placeHolder.svg'),
+  play: () => import('./icons/play.svg'),
+  plus: () => import('./icons/plus.svg'),
+  plusCircle: () => import('./icons/plusCircle.svg'),
+  plusMedium: () => import('./icons/plusMedium.svg'),
+  plusSmall: () => import('./icons/plusSmall.svg'),
+  questionMarkCircle: () => import('./icons/questionMarkCircle.svg'),
+  refresh: () => import('./icons/refresh.svg'),
+  search: () => import('./icons/search.svg'),
+  send: () => import('./icons/send.svg'),
+  settings: () => import('./icons/settings.svg'),
+  share: () => import('./icons/share.svg'),
+  sidebarPanel: () => import('./icons/sidebarPanel.svg'),
+  sortDown: () => import('./icons/sortDown.svg'),
+  sortUp: () => import('./icons/sortUp.svg'),
+  sticky: () => import('./icons/sticky.svg'),
+  stop: () => import('./icons/stop.svg'),
+  symbolLogo: () => import('./icons/symbolLogo.svg'),
+  table: () => import('./icons/table.svg'),
+  target: () => import('./icons/target.svg'),
+  targetWithArrow: () => import('./icons/targetWithArrow.svg'),
+  telegram: () => import('./icons/telegram.svg'),
+  textBold: () => import('./icons/textBold.svg'),
+  textItalic: () => import('./icons/textItalic.svg'),
+  textLink: () => import('./icons/textLink.svg'),
+  textList: () => import('./icons/textList.svg'),
+  textListNumbers: () => import('./icons/textListNumbers.svg'),
+  textListSmall: () => import('./icons/textListSmall.svg'),
+  textStrikethrough: () => import('./icons/textStrikethrough.svg'),
+  textUnderline: () => import('./icons/textUnderline.svg'),
+  themeDark: () => import('./icons/themeDark.svg'),
+  themeLight: () => import('./icons/themeLight.svg'),
+  themeSystem: () => import('./icons/themeSystem.svg'),
+  tick: () => import('./icons/tick.svg'),
+  tickCircle: () => import('./icons/tickCircle.svg'),
+  tickCircleBold: () => import('./icons/tickCircleBold.svg'),
+  tickMicro: () => import('./icons/tickMicro.svg'),
+  tradingView: () => import('./icons/tradingView.svg'),
+  trash: () => import('./icons/trash.svg'),
+  trashBold: () => import('./icons/trashBold.svg'),
+  userRound: () => import('./icons/userRound.svg'),
+  users: () => import('./icons/users.svg'),
+  wallet: () => import('./icons/wallet.svg'),
+};
+
+// Cache for loaded icon components — avoids flicker on re-render
+const iconCache = new Map<IconVariant, SvgComponent>();
+
+/** Synchronous cache lookup — returns null if not yet loaded */
+export function getCachedIcon(name: IconVariant): SvgComponent | null {
+  return iconCache.get(name) ?? null;
+}
+
+export async function getIcon(name: IconVariant): Promise<SvgComponent | null> {
+  const cached = iconCache.get(name);
+  if (cached) return cached;
+
+  const loader = iconLoaders[name];
+  if (!loader) return null;
+
+  const mod = await loader();
+  const component = mod.default;
+  iconCache.set(name, component);
+  return component;
+}

@@ -1,0 +1,143 @@
+{
+    "nav": {
+        "back": "Back",
+        "myProfile": "My Profile",
+        "general": "General",
+        "portfolios": "Portfolios & Accounts",
+        "tariff": "Subscription",
+        "payments": "Payments",
+        "legal": "Legal",
+        "openMenu": "Open menu"
+    },
+    "sectionTitles": {
+        "myProfile": "My Profile",
+        "general": "General",
+        "portfolios": "Portfolios & Accounts",
+        "tariff": "Subscription",
+        "payments": "Payments",
+        "legal": "Legal Information"
+    },
+    "legal": {
+        "documents": "Documents",
+        "terms": "Terms of Service",
+        "privacyPolicy": "Privacy Policy",
+        "cookiePolicy": "Cookie Policy",
+        "disclaimer": "Disclaimer",
+        "loadError": "Failed to load the document. Please try again later."
+    },
+    "myProfile": {
+        "uploadPhoto": "Upload photo",
+        "selectImage": "Select image",
+        "deleteImage": "Delete image",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "firstNamePlaceholder": "First Name",
+        "lastNamePlaceholder": "Last Name",
+        "nameHint": "Your full name is visible to everyone on the platform",
+        "emailHint": "Your email address is used to log in to the application",
+        "changePassword": "Change Password",
+        "chooseSubscription": "Choose plan",
+        "deleteProfile": "Delete Profile",
+        "expiresAt": "Expires {{date}}",
+        "cropModal": {
+            "title": "Profile picture",
+            "imageAlt": "Crop photo",
+            "cancel": "Cancel",
+            "save": "Save"
+        },
+        "subscription": {
+            "trialPeriod": "Trial period",
+            "free": "Free",
+            "tokens": "Tokens"
+        },
+        "deleteAvatarModal": {
+            "title": "Delete image",
+            "subtitle": "Are you sure you want to delete your profile photo?",
+            "cancel": "Cancel",
+            "delete": "Delete"
+        },
+        "avatarUploadError": "Failed to upload avatar",
+        "avatarDeleteError": "Failed to delete avatar",
+        "profileUpdateError": "Failed to update profile",
+        "changePasswordModal": {
+            "title": "Change Password",
+            "oldPassword": "Current password",
+            "newPassword": "New password",
+            "confirmPassword": "Confirm password",
+            "cancel": "Cancel",
+            "save": "Save",
+            "success": "Password changed successfully",
+            "wrongOldPassword": "Wrong current password",
+            "error": "Failed to change password",
+            "passwordsMismatch": "Passwords do not match",
+            "successTitle": "Done!",
+            "successSubtitle": "Password changed successfully",
+            "understood": "Got it"
+        },
+        "deleteModal": {
+            "title": "Delete Profile",
+            "subtitle": "Enter your email to confirm account deletion.",
+            "emailPlaceholder": "Enter e-mail",
+            "cancel": "Cancel",
+            "delete": "Delete",
+            "error": "Failed to delete profile"
+        }
+    },
+    "general": {
+        "language": "Language",
+        "appearance": "Appearance",
+        "currency": "Currency",
+        "save": "Save",
+        "theme": {
+            "light": "Light theme",
+            "dark": "Dark theme",
+            "system": "System"
+        }
+    },
+    "tariff": {
+        "recommended": "Recommended plan",
+        "perMonth": "/ month",
+        "choosePlan": "Choose plan",
+        "plans": {
+            "basic": {
+                "name": "Basic",
+                "tokens": "600K tokens"
+            },
+            "pro": {
+                "name": "Pro",
+                "tokens": "2M tokens"
+            },
+            "premium": {
+                "name": "Premium",
+                "tokens": "10M tokens"
+            }
+        },
+        "features": {
+            "unlimitedDataSources": "Unlimited data sources",
+            "advancedAiAnalysis": "Advanced AI analysis",
+            "customizableDashboards": "Flexible customizable dashboards",
+            "securityCompliance": "Full security compliance"
+        },
+        "cancelPlan": "Cancel subscription"
+    },
+    "payments": {
+        "comingSoon": "Section under development",
+        "searchPlaceholder": "Enter payment date",
+        "columns": {
+            "date": "Date",
+            "amount": "Amount",
+            "type": "Payment type",
+            "status": "Status"
+        },
+        "types": {
+            "topup": "Top-up",
+            "tokens": "Tokens",
+            "subscription": "Subscription"
+        },
+        "statuses": {
+            "paid": "Paid",
+            "rejected": "Rejected"
+        },
+        "empty": "No payments"
+    }
+}

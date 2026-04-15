@@ -1,0 +1,837 @@
+@import '../tokens/theme-variables.css';
+@import '../tokens/color-primitives.css';
+@import '../tokens/shadows.css';
+@import '../tokens/blurs.css';
+@import '../tokens/manual-overrides.css';
+@import '../tokens/brand-finam.css';
+@import '../tokens/brand-lime.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Text selection styling — uses brand-bg_deep which switches per brand */
+::selection {
+  background-color: var(--brand-bg_deep);
+  color: inherit;
+}
+
+[data-theme="dark"] ::selection {
+  background-color: var(--brand-bg_deep);
+  color: #FFFFFF;
+}
+
+@layer base {
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: var(--font-inter), 'Inter', sans-serif;
+    background-color: var(--bg-base);
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  code {
+    @apply font-mono;
+  }
+
+  #root {
+    height: 100%;
+  }
+}
+
+@layer components {
+  .card {
+    background-color: var(--surface-medium);
+    @apply rounded-xl shadow-soft;
+    border: 1px solid var(--border-light);
+  }
+
+  /* Theme-aware component classes */
+  .theme-surface {
+    background-color: var(--surface-medium);
+  }
+
+  .theme-text-primary {
+    color: var(--text-primary);
+  }
+
+  .theme-text-secondary {
+    color: var(--text-secondary);
+  }
+
+  .theme-border {
+    border-color: var(--border-light);
+  }
+
+  .theme-bg-hover:hover {
+    background-color: var(--bg-hover);
+  }
+
+  .theme-overlay-medium {
+    background-color: var(--overlay-medium);
+  }
+
+  /* Icon inversion for dark theme */
+  [data-theme="dark"] .theme-icon-invert {
+    filter: invert(1);
+  }
+
+  /* Apply theme transitions to all elements */
+  [data-theme] * {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+}
+
+@layer utilities {
+  .sidebar-border-gradient {
+    background: linear-gradient(
+      0deg,
+      var(--text-icon-black-inverse-a-0) 0%,
+      var(--stroke-a4) 10%,
+      var(--stroke-a4) 90%,
+      var(--text-icon-black-inverse-a-0) 100%
+    );
+  }
+
+  .divider-gradient-vertical {
+    background: linear-gradient(
+      0deg,
+      var(--whiteinverse-a0) 0%,
+      var(--whiteinverse-a6) 10%,
+      var(--whiteinverse-a6) 90%,
+      var(--whiteinverse-a0) 100%
+    );
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .animate-fadeIn {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  /* Onboarding glow border — ring mask via mask-composite */
+  .glow-border-mask {
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    mask-composite: exclude;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* =================================
+   ReactFlow & Card Component Styles
+   ================================= */
+
+.react-flow__attribution {
+  display: none !important;
+}
+
+/* Card Node Styles - !important needed to override ReactFlow defaults */
+.react-flow__node-cardNode,
+.react-flow__node-tradingIdeaNode {
+  width: auto !important;
+  height: auto !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  max-width: none !important;
+  max-height: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+}
+
+/* Remove selection border/outline from ReactFlow nodes */
+.react-flow__node-cardNode.selected,
+.react-flow__node-tradingIdeaNode.selected,
+.react-flow__node-cardNode:focus,
+.react-flow__node-tradingIdeaNode:focus,
+.react-flow__node-cardNode:focus-visible,
+.react-flow__node-tradingIdeaNode:focus-visible {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  box-sizing: border-box !important;
+}
+
+.card-preview {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-card);
+  border-radius: 8px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.card-preview img,
+.card-preview canvas,
+.card-preview iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  -webkit-image-rendering: -webkit-optimize-contrast;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
+.react-flow__node-cardNode .react-flow__handle:not(.port-handle),
+.react-flow__node-tradingIdeaNode .react-flow__handle {
+  opacity: 0 !important;
+}
+
+/* Hover border on card widget container + thin scrollbar */
+.card-widget-container {
+  border-color: var(--stroke-a4);
+  transition: border-color 0.15s ease;
+  scrollbar-width: thin;
+  scrollbar-color: var(--wrapper-a8) transparent;
+}
+
+.react-flow__node-cardNode:hover .card-widget-container {
+  border-color: var(--mind-accent);
+}
+
+
+.card-widget-container ::-webkit-scrollbar {
+  width: 4px;
+}
+.card-widget-container ::-webkit-scrollbar-thumb {
+  background: var(--wrapper-a8);
+  border-radius: 2px;
+}
+.card-widget-container ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.card-resize-handle {
+  position: absolute;
+  pointer-events: auto;
+  touch-action: none;
+  z-index: 10;
+  background: transparent;
+  border: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+/* Show resize handles only when card is hovered or selected */
+.react-flow__node-cardNode:hover .card-resize-handle,
+.react-flow__node-cardNode.selected .card-resize-handle {
+  opacity: 1;
+}
+
+.card-resize-handle::after {
+  content: '';
+  position: absolute;
+  border-radius: 4px;
+  background: transparent;
+  transition: background 0.2s ease;
+}
+
+.card-resize-handle--right::after {
+  right: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 32px;
+}
+
+.card-resize-handle--bottom::after {
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32px;
+  height: 4px;
+}
+
+.card-resize-handle--corner::after {
+  right: 2px;
+  bottom: 2px;
+  width: 12px;
+  height: 12px;
+  border-radius: 4px;
+}
+
+.card-resize-handle:hover::after {
+  background: rgba(59, 130, 246, 0.5);
+}
+
+/* Focused Card Node */
+.react-flow__node-focusedCardNode {
+  width: auto !important;
+  height: auto !important;
+  min-width: 280px !important;
+  padding: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Layout containers */
+.lmx__home__menu-l {
+  width: 60px;
+  background-color: var(--surface-medium);
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  -webkit-user-select: none;
+  user-select: none;
+  border-right: solid 1px var(--border-medium);
+}
+
+.lmx__home__menu-l img:nth-of-type(2) {
+  position: absolute;
+  bottom: 0;
+}
+
+.lmx__home__main-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.lmx__home__menu-t {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  border-bottom: solid 1px var(--border-medium);
+  flex-shrink: 0;
+  padding: 0 16px;
+}
+
+.lmx__home__menu-t img {
+  height: 40px;
+  width: auto;
+  flex-shrink: 0;
+}
+
+/* Dotted background pattern */
+.bg-dots-pattern {
+  background-color: #0a0a0a;
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.15) 1px,
+    transparent 1px
+  );
+  background-size: 18px 18px;
+}
+
+/* Light theme override */
+[data-theme='light'] .bg-dots-pattern {
+  background-color: #ececf0;
+  background-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.1) 1px,
+    transparent 1px
+  );
+  background-size: 18px 18px;
+}
+
+.lmx__home__reactflow-wrapper {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--bg-base);
+}
+
+/* ReactFlow: base background on container */
+.react-flow {
+  background-color: var(--bg-base);
+}
+
+/* Infinite board: dots on a huge layer inside viewport so they move with pan/zoom */
+.react-flow__viewport {
+  background-color: var(--bg-base);
+  position: relative;
+}
+
+/* Large dot grid layer (moves with viewport, covers pannable area) */
+.react-flow__viewport::before {
+  content: '';
+  position: absolute;
+  /* Center a very large area so panning in any direction stays within dots */
+  top: -15000px;
+  left: -15000px;
+  width: 30000px;
+  height: 30000px;
+  background-image: radial-gradient(
+    circle,
+    var(--bg-dots-color) 1px,
+    transparent 1px
+  );
+  background-size: 18px 18px;
+  background-color: var(--bg-base);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.lmx__home__reactflow-wrapper .react-flow__pane {
+  cursor: grab;
+}
+
+.lmx__home__reactflow-wrapper .react-flow__pane:active {
+  cursor: grabbing;
+}
+
+.lmx__home__reactflow-wrapper .react-flow__node {
+  cursor: default;
+}
+
+.lmx__home__content-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.react-flow__controls {
+  position: fixed;
+  left: 30px;
+  bottom: 30px;
+  width: 160px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: row;
+  backdrop-filter: blur(10px);
+}
+
+.react-flow__controls button {
+  background: none;
+  border: 0;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  display: flex;
+  transition: opacity 0.1s linear;
+}
+
+.react-flow__controls button svg {
+  color: #fff;
+  fill: #fff;
+  opacity: 0.5;
+  transition: opacity 0.1s linear;
+}
+
+.react-flow__controls button:hover svg {
+  opacity: 1;
+}
+
+.react-flow__controls button:hover {
+  background-color: transparent;
+}
+
+/* Board preview images - Dark Theme */
+[data-theme='dark'] .board-preview-image {
+  filter: brightness(0.85) contrast(1.1);
+}
+
+/* ReactFlow MiniMap - Dark Theme */
+[data-theme='dark'] .react-flow__minimap {
+  background-color: transparent;
+  border: none;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+[data-theme='dark'] .react-flow__minimap-svg {
+  background-color: var(--bg-card);
+}
+
+[data-theme='dark'] .react-flow__minimap-mask {
+  fill: rgba(0, 0, 0, 0.6);
+}
+
+/* =================================
+   MUI Component Overrides
+   !important required to override MUI's high-specificity styles
+   ================================= */
+
+/* MuiAppBar height constraints */
+.MuiAppBar-root {
+  max-height: 40px !important;
+  min-height: 40px !important;
+  box-shadow: none !important;
+}
+
+.MuiAppBar-root button {
+  max-height: 40px !important;
+  height: auto !important;
+}
+
+/* MuiTab height */
+.MuiButtonBase-root.MuiTab-root {
+  min-height: auto !important;
+}
+
+.MuiButtonBase-root.MuiTab-root.MuiTab-labelIcon.MuiTab-textColorPrimary.Mui-selected {
+  max-height: 40px !important;
+  height: auto !important;
+  min-height: auto !important;
+}
+
+/* MuiToolbar */
+.MuiToolbar-root.MuiToolbar-gutters.MuiToolbar-regular {
+  height: 40px !important;
+  min-height: 40px !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 24px !important;
+  margin-right: 24px !important;
+}
+
+/* MuiAppBar border */
+.MuiPaper-root.MuiAppBar-root.MuiAppBar-colorDefault.MuiAppBar-positionStatic {
+  border-bottom: 1px solid #e5e5e5 !important;
+  box-shadow: none !important;
+}
+
+/* MuiCardContent padding */
+.MuiCardContent-root:last-child {
+  padding-bottom: 0 !important;
+}
+
+/* Hide specific MuiBox */
+.MuiBox-root.css-1k7w7ob {
+  display: none !important;
+}
+
+/* MuiDialog styling */
+.MuiDialog-paper {
+  border-radius: 12px !important;
+}
+
+.MuiDialog-root .MuiDialog-paper {
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  margin: 0 !important;
+}
+
+/* Dark theme support for MUI Dialogs */
+[data-theme='dark'] .MuiDialog-paper {
+  background-color: var(--surface-medium);
+  color: var(--text-primary);
+}
+
+[data-theme='dark'] .MuiDialogTitle-root {
+  color: var(--text-primary);
+}
+
+[data-theme='dark'] .MuiDialogContent-root {
+  color: var(--text-primary);
+}
+
+[data-theme='dark'] .MuiDialogActions-root {
+  background-color: var(--surface-medium);
+}
+
+[data-theme='dark'] .MuiIconButton-root {
+  color: var(--text-primary);
+}
+
+/* Dark theme textarea placeholder */
+[data-theme='dark'] textarea::placeholder {
+  color: var(--text-muted);
+}
+
+/* MUI Buttons - remove shadows */
+.MuiButton-root,
+.MuiButtonBase-root,
+.MuiIconButton-root {
+  box-shadow: none !important;
+  border-radius: 9px !important;
+}
+
+.MuiButton-root:hover,
+.MuiButton-root:focus,
+.MuiButtonBase-root:hover,
+.MuiButtonBase-root:focus,
+.MuiIconButton-root:hover,
+.MuiIconButton-root:focus {
+  box-shadow: none !important;
+}
+
+/* MuiFab buttons - keep shadows */
+.MuiButtonBase-root.MuiFab-root {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25) !important;
+}
+
+/* MuiDialogActions padding */
+.MuiDialogActions-root.MuiDialogActions-spacing {
+  padding: 24px !important;
+}
+
+/* MuiDialogContent padding */
+.MuiDialogContent-root {
+  padding-top: 16px !important;
+  padding-bottom: 0px !important;
+}
+
+/* MuiTabs height */
+.MuiTabs-root {
+  min-height: auto !important;
+}
+
+/* ReactFlow node base styles */
+.react-flow__node {
+  padding: 18px;
+  border-radius: 16px;
+  background: var(--surface-medium);
+  border: solid 1px transparent;
+  min-width: 288px;
+  max-width: 400px;
+  max-height: 512px;
+  min-height: 126px;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
+     border 0.2s linear;
+  box-sizing: border-box;
+}
+
+.react-flow__node.selected {
+  border: none !important;
+  outline: none !important;
+}
+
+/* AI Node styles - transparent background */
+.react-flow__node[data-id*='ai-node'] {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 96px !important;
+  height: 101px !important;
+  min-width: 96px !important;
+  min-height: 101px !important;
+  max-width: 96px !important;
+  max-height: 101px !important;
+}
+
+.react-flow__node[data-id*='ai-node'] > div {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 96px !important;
+  height: 101px !important;
+  min-width: 96px !important;
+  min-height: 101px !important;
+  max-width: 96px !important;
+  max-height: 101px !important;
+}
+
+/* News card content HTML styles */
+.news-card-content p {
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.news-card-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin: 0.5rem 0;
+}
+
+.news-card-content figure {
+  margin: 0.5rem 0;
+}
+
+.news-card-content figure img {
+  width: 100%;
+  display: block;
+}
+
+.news-card-content figcaption {
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  color: #6f6f7c;
+  text-align: center;
+}
+
+.news-card-content a {
+  color: var(--brand-primary, var(--mind-accent));
+  text-decoration: underline;
+}
+
+.news-card-content a:hover {
+  color: var(--brand-primary-hover, var(--mind-accent));
+}
+
+.news-card-content strong {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.news-card-content .image-popup-no-margins {
+  margin: 0.5rem 0;
+}
+
+/* TipTap editor: "+" button widget */
+.tiptap p {
+  position: relative;
+}
+
+.plus-button-widget {
+  position: absolute;
+  left: -24px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  transition: color 0.15s, background-color 0.15s, opacity 0.15s;
+  user-select: none;
+  pointer-events: auto;
+  opacity: 0;
+}
+
+.tiptap p:hover > .plus-button-widget,
+.plus-button-widget--active {
+  opacity: 1;
+}
+
+.plus-button-widget:hover {
+  color: var(--text-primary);
+  background-color: var(--blackinverse-a4);
+}
+
+.plus-button-widget--active {
+  color: var(--brand-base, #7863f6);
+}
+
+/* TipTap editor: placeholder text */
+.tiptap p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  float: left;
+  color: var(--text-muted);
+  pointer-events: none;
+  height: 0;
+}
+
+/* Strategy Card */
+.strategy-card {
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(26, 26, 26, 0.98);
+  padding: 0 !important;
+  @apply w-full h-auto p-4 cursor-pointer;
+}
+
+/* Mobile stub — show below 800px, hide main content */
+.mobile-guard-stub {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100dvh;
+  padding: 0 16px;
+  background-color: var(--bg-base);
+}
+
+.mobile-guard-content {
+  display: contents;
+}
+
+@media (max-width: 799px) {
+  .mobile-guard-stub {
+    display: flex;
+  }
+
+  .mobile-guard-content {
+    display: none;
+  }
+}
+
+/* News feed widget — config panel button and footer theming */
+:root {
+  --filters-footer-gradient: linear-gradient(0deg, rgba(255, 255, 255, 0.90) 0%, rgba(255, 255, 255, 0.00) 100%);
+  --filters-btn-reset-bg: rgba(4, 4, 5, 0.08);
+  --filters-btn-reset-text: #040405;
+  --filters-btn-apply-bg: rgba(4, 4, 5, 0.88);
+  --filters-btn-apply-text: #ffffff;
+}
+
+[data-theme="dark"] {
+  --filters-footer-gradient: linear-gradient(0deg, rgba(28, 28, 31, 0.92) 0%, rgba(28, 28, 31, 0.00) 100%);
+  --filters-btn-reset-bg: rgba(255, 255, 255, 0.12);
+  --filters-btn-reset-text: #ffffff;
+  --filters-btn-apply-bg: rgba(255, 255, 255, 0.90);
+  --filters-btn-apply-text: #0d0d0d;
+}
+
+/* News feed widget — segment control theming */
+:root {
+  --news-segment-bg: rgba(4, 4, 5, 0.08);
+  --news-segment-tab-active-bg: rgba(4, 4, 5, 0.12);
+  --news-segment-badge-active-bg: rgba(4, 4, 5, 0.10);
+  --news-segment-badge-inactive-bg: rgba(4, 4, 5, 0.06);
+  --news-segment-badge-color: #040405; /* static — same in both themes */
+}
+
+[data-theme="dark"] {
+  --news-segment-bg: rgba(255, 255, 255, 0.12);
+  --news-segment-tab-active-bg: rgba(255, 255, 255, 0.20);
+  --news-segment-badge-active-bg: #ffffff;
+  --news-segment-badge-inactive-bg: rgba(255, 255, 255, 0.20);
+}
