@@ -3,9 +3,9 @@ import { m } from 'framer-motion';
 import IconButton from '@/shared/ui/IconButton';
 import Tooltip from '@/shared/ui/Tooltip';
 import { Icon } from '@/shared/ui/Icon';
-import SignalWidgetCatalog from '@/features/board/components/SignalWidgetCatalog';
-import StrategyWidgetCatalog from '@/features/board/components/StrategyWidgetCatalog';
-import type { SignalSourceType } from '@/features/board/components/SignalWidgetCatalog';
+import SignalWidgetCatalog from './SignalWidgetCatalog';
+import StrategyWidgetCatalog from './StrategyWidgetCatalog';
+import type { SignalSourceType } from './SignalWidgetCatalog';
 import type { CardType } from '@/types/common';
 import { useTranslation } from '@/shared/i18n/client';
 import {

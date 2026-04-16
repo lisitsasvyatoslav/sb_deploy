@@ -1,5 +1,3 @@
-import { apiClient } from '@/services/api/client';
-
 export interface LinkPreviewData {
   url: string;
   domain: string;
@@ -9,9 +7,12 @@ export interface LinkPreviewData {
   favicon?: string;
 }
 
+/** Storybook-friendly: no backend required */
 export async function fetchLinkPreview(url: string): Promise<LinkPreviewData> {
-  const { data } = await apiClient.get<LinkPreviewData>('/link-preview', {
-    params: { url },
-  });
-  return data;
+  try {
+    const u = new URL(url);
+    return { url, domain: u.hostname };
+  } catch {
+    return { url, domain: url };
+  }
 }

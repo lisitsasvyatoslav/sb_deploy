@@ -1,4 +1,4 @@
-import type { YMGoal } from '@/shared/hooks';
+import type { YMGoal } from '@/shared/hooks/useYandexMetrika';
 import type { TranslateFn } from '@/shared/i18n/settings';
 
 export interface BoardSectionConfig {

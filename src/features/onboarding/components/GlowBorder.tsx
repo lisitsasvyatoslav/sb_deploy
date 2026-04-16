@@ -10,18 +10,6 @@ type GlowBorderProps = {
   className?: string;
 };
 
-/**
- * Reusable animated shimmering glow border.
- * Wraps any element without affecting its layout (uses absolute positioning
- * with negative inset). The shimmer is a rotating conic gradient masked
- * into a ring shape via CSS mask-composite.
- *
- * Always renders the same wrapper div so toggling `active` never causes
- * React to remount children (preserves component state).
- *
- * Always renders the same wrapper div so toggling `active` never causes
- * React to remount children (preserves component state).
- */
 export const GlowBorder = ({
   children,
   active,
@@ -29,9 +17,6 @@ export const GlowBorder = ({
   borderRadius = 8,
   className = '',
 }: GlowBorderProps) => {
-  // When inactive with no className, use `display:contents` so the wrapper
-  // is invisible to layout (like a fragment) but stays in the DOM tree,
-  // preventing React from remounting children when `active` toggles.
   const inactiveClass = className ? '' : 'contents';
 
   return (
@@ -41,7 +26,6 @@ export const GlowBorder = ({
     >
       {active && (
         <>
-          {/* Rotating conic-gradient masked into an inset ring */}
           <div
             className="absolute pointer-events-none z-[60] overflow-hidden glow-border-mask"
             style={{
@@ -63,7 +47,6 @@ export const GlowBorder = ({
             />
           </div>
 
-          {/* Soft ambient glow shadow */}
           <div
             className="absolute pointer-events-none z-[60] animate-glow-pulse"
             style={{

@@ -3,7 +3,7 @@
 import { useCallback, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { m, AnimatePresence } from 'framer-motion';
-import { useClickOutside } from '@/shared/hooks';
+import { useClickOutside } from '@/shared/hooks/useClickOutside';
 import { useDropdownContext } from './DropdownContext';
 import { useDropdownPosition } from './useDropdownPosition';
 import type { DropdownMenuProps } from './Dropdown.types';

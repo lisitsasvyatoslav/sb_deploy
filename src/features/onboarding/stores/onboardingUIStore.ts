@@ -9,17 +9,10 @@ type OnboardingUIState = {
   widgetSize: { width: number; height: number };
   dockedWidth: number;
   activeSceneIndex: number;
-
-  /** Steps the user has checked off, keyed as "sceneIndex-stepIndex" */
   checkedSteps: Record<string, boolean>;
-  /** Which UI element currently has the glow highlight (null = none) */
   activeHighlightTarget: string | null;
-  /** Whether the required survey questions have been answered */
   surveyCompleted: boolean;
-
-  /** Message to auto-fill into chat input (consumed by ChatWindow) */
   pendingChatMessage: string | null;
-  /** Step key awaiting a chat reply before auto-checking (e.g. "2-0") */
   awaitingReplyStepKey: string | null;
 
   openGuide: () => void;
@@ -31,17 +24,13 @@ type OnboardingUIState = {
   setDockedWidth: (width: number) => void;
   setActiveSceneIndex: (index: number) => void;
   resetUIState: () => void;
-
   toggleStepCheck: (sceneIndex: number, stepIndex: number) => void;
   setActiveHighlightTarget: (target: string | null) => void;
   setSurveyCompleted: (completed: boolean) => void;
   setPendingChatMessage: (msg: string | null) => void;
   setAwaitingReplyStepKey: (key: string | null) => void;
-  /** Replace the entire checkedSteps map (used for server reconciliation) */
   setCheckedSteps: (steps: Record<string, boolean>) => void;
-  /** Mark the awaiting step as checked and clear the awaiting state */
   completeAwaitingStep: () => void;
-  /** Reset only step-related state (preserves widget position/mode/size preferences) */
   resetStepState: () => void;
 };
 
@@ -127,9 +116,6 @@ export const useOnboardingUIStore = create<OnboardingUIState>()(
     }),
     {
       name: 'onboarding-ui',
-      // Only per-device UI preferences are persisted to localStorage.
-      // Progress fields (checkedSteps, activeSceneIndex, surveyCompleted)
-      // are owned by the server and hydrated by useOnboardingProgressSync.
       partialize: (state) => ({
         isGuideOpen: state.isGuideOpen,
         widgetMode: state.widgetMode,

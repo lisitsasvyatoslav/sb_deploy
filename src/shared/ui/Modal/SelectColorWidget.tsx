@@ -3,7 +3,9 @@ import classNames from 'classnames';
 import { m, AnimatePresence } from 'framer-motion';
 import { Icon } from '@/shared/ui/Icon/Icon';
 import { useTranslation } from '@/shared/i18n/client';
-import { DEFAULT_CARD_COLOR } from '@/features/board/components/CardSelectionToolbar';
+
+/** Same default as former CardSelectionToolbar gray card background */
+const DEFAULT_CARD_COLOR = '#F2F2F7';
 
 interface SelectColorWidgetProps {
   currentColor: string;

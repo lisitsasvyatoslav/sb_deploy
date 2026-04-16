@@ -15,7 +15,7 @@
     "lint:fix": "eslint --fix .",
     "check": "tsc --noEmit && eslint .",
     "update-tokens": "node scripts/update-tokens.js",
-    "storybook": "bash scripts/start-storybook.sh",
+    "storybook": "storybook dev -p 6006 --no-open",
     "storybook:build": "storybook build -o storybook-static"
   },
   "dependencies": {
