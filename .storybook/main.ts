@@ -29,7 +29,7 @@ const config: StorybookConfig = {
     reactDocgen: 'react-docgen',
   },
 
-  webpackFinal: async (webpackConfig) => {
+  webpackFinal: async (webpackConfig, options) => {
     // --- SVG: replicate next.config.js setup ---
     // Since .storybook/next.config.js is simplified (no webpack hook),
     // SVG → React components must be configured here.
@@ -84,6 +84,21 @@ const config: StorybookConfig = {
         '@': path.resolve(__dirname, '../src'),
         '@/types': path.resolve(__dirname, '../src/types/index'),
       };
+    }
+
+    // `storybook build`: skip source maps — on Vercel this phase can exceed time/memory
+    // (thousands of SourceMapDevToolPlugin lines, then silent kill with no clear error).
+    if (options.configType === 'PRODUCTION') {
+      webpackConfig.devtool = false;
+      if (webpackConfig.plugins?.length) {
+        webpackConfig.plugins = webpackConfig.plugins.filter(
+          (plugin) =>
+            !plugin ||
+            typeof plugin !== 'object' ||
+            !('constructor' in plugin) ||
+            plugin.constructor.name !== 'SourceMapDevToolPlugin'
+        );
+      }
     }
 
     return webpackConfig;
