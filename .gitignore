@@ -39,10 +39,30 @@ coverage/
 # ESLint
 .eslintcache
 
+# Prettier
+.prettiercache
+
+# Next.js bundle analyzer (@next/bundle-analyzer — вывод по умолчанию часто в `analyze/`)
+analyze/
+
+# Direnv (локальные переменные окружения)
+.envrc
+.direnv/
+
+# Случайные бэкапы после слияний / ручных правок
+*.orig
+*.rej
+
+# Локальные npm-пакеты (`npm pack`)
+*.tgz
+
 # OS and editors
 .DS_Store
 Thumbs.db
+ehthumbs.db
 Desktop.ini
+$RECYCLE.BIN/
+System Volume Information/
 *.swp
 *.swo
 *~
@@ -75,6 +95,9 @@ storybook-debug.log
 
 # Редактор: локальная история файлов
 .history/
+
+# Cursor (локальные логи; правила в `.cursor/rules` при необходимости коммитьте отдельно)
+.cursor/debug.log
 
 # Временные каталоги
 tmp/
