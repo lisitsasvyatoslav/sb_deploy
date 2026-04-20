@@ -9,7 +9,20 @@ import tsPlugin from '@typescript-eslint/eslint-plugin';
 import tsParser from '@typescript-eslint/parser';
 import prettierPlugin from 'eslint-plugin-prettier';
 import globals from 'globals';
-import { baseIgnores, baseRules } from '../eslint.base.config.mjs';
+
+/** Self-contained defaults (repo no longer ships ../eslint.base.config.mjs). */
+const baseIgnores = [
+  '**/node_modules/**',
+  '.next/**',
+  'storybook-static/**',
+  'out/**',
+  'dist/**',
+  'coverage/**',
+];
+
+const baseRules = {
+  'prettier/prettier': 'warn',
+};
 
 const compat = new FlatCompat({
   baseDirectory: import.meta.dirname,

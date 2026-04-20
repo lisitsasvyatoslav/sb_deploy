@@ -1,18 +1,12 @@
 import React from 'react';
-import * as Sentry from '@sentry/react';
 import Button from '@/shared/ui/Button';
 import { logger } from '@/shared/utils/logger';
 
 interface ErrorFallbackProps {
   error: unknown;
-  componentStack: string;
-  eventId: string;
   resetError: () => void;
 }
 
-/**
- * Extracts error message and stack from an unknown error
- */
 function getErrorDetails(error: unknown): { message: string; stack?: string } {
   if (error instanceof Error) {
     return { message: error.message, stack: error.stack };
@@ -23,16 +17,12 @@ function getErrorDetails(error: unknown): { message: string; stack?: string } {
   return { message: 'An unknown error occurred' };
 }
 
-/**
- * Fallback UI displayed when an error is caught by the ErrorBoundary
- */
 function ErrorFallback({ error, resetError }: ErrorFallbackProps) {
   const errorDetails = getErrorDetails(error);
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50">
       <div className="max-w-md w-full mx-4">
         <div className="bg-white rounded-lg shadow-lg p-8 text-center">
-          {/* Error Icon */}
           <div className="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-red-100 mb-6">
             <svg
               className="h-8 w-8 text-red-600"
@@ -49,16 +39,13 @@ function ErrorFallback({ error, resetError }: ErrorFallbackProps) {
             </svg>
           </div>
 
-          {/* Error Message */}
           <h1 className="text-xl font-semibold text-gray-900 mb-2">
             Something went wrong
           </h1>
           <p className="text-gray-600 mb-6">
-            An unexpected error occurred. Our team has been notified and is
-            working to fix the issue.
+            An unexpected error occurred. Please try again.
           </p>
 
-          {/* Error Details (Development only) */}
           {process.env.NODE_ENV === 'development' && (
             <details className="mb-6 text-left">
               <summary className="cursor-pointer text-sm text-gray-500 hover:text-gray-700">
@@ -71,17 +58,9 @@ function ErrorFallback({ error, resetError }: ErrorFallbackProps) {
             </details>
           )}
 
-          {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Button onClick={resetError} variant="accent" size="md">
               Try again
-            </Button>
-            <Button
-              onClick={() => (window.location.href = '/')}
-              variant="secondary"
-              size="md"
-            >
-              Go to home
             </Button>
           </div>
         </div>
@@ -94,40 +73,42 @@ interface ErrorBoundaryProps {
   children: React.ReactNode;
 }
 
-export function ErrorBoundary({ children }: ErrorBoundaryProps) {
-  return (
-    <Sentry.ErrorBoundary
-      fallback={(props) => <ErrorFallback {...props} />}
-      showDialog={false}
-      onError={(error, componentStack, eventId) => {
-        // Explicitly capture the exception with additional context
-        Sentry.captureException(error, {
-          contexts: {
-            react: {
-              componentStack,
-            },
-          },
-          tags: {
-            errorBoundary: true,
-          },
-        });
+interface ErrorBoundaryState {
+  error: unknown;
+}
 
-        // Additional logging in development
-        if (process.env.NODE_ENV === 'development') {
-          logger.error('ErrorBoundary', 'Caught an error', {
-            error,
-            componentStack,
-            eventId,
-          });
-        }
-      }}
-      beforeCapture={(scope) => {
-        scope.setTag('boundary', 'root');
-      }}
-    >
-      <div className="relative">{children}</div>
-    </Sentry.ErrorBoundary>
-  );
+export class ErrorBoundary extends React.Component<
+  ErrorBoundaryProps,
+  ErrorBoundaryState
+> {
+  constructor(props: ErrorBoundaryProps) {
+    super(props);
+    this.state = { error: null };
+  }
+
+  static getDerivedStateFromError(error: unknown): ErrorBoundaryState {
+    return { error };
+  }
+
+  componentDidCatch(error: unknown, errorInfo: React.ErrorInfo) {
+    logger.error('ErrorBoundary', 'Caught an error', {
+      error,
+      componentStack: errorInfo.componentStack,
+    });
+  }
+
+  resetError = () => {
+    this.setState({ error: null });
+  };
+
+  render() {
+    if (this.state.error) {
+      return (
+        <ErrorFallback error={this.state.error} resetError={this.resetError} />
+      );
+    }
+    return <div className="relative">{this.props.children}</div>;
+  }
 }
 
 export default ErrorBoundary;

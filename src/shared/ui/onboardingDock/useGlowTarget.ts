@@ -1,4 +1,4 @@
-import { useOnboardingUIStore } from '../stores/onboardingUIStore';
+import { useOnboardingUIStore } from './onboardingUIStore';
 
 export function useGlowTarget(target: string | string[]): boolean {
   const isGuideOpen = useOnboardingUIStore((s) => s.isGuideOpen);

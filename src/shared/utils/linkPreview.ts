@@ -7,7 +7,7 @@ export interface LinkPreviewData {
   favicon?: string;
 }
 
-/** Storybook-friendly: no backend required */
+/** No backend: parse hostname only (sufficient for Storybook / UI preview). */
 export async function fetchLinkPreview(url: string): Promise<LinkPreviewData> {
   try {
     const u = new URL(url);

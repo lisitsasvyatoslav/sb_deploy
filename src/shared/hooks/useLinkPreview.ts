@@ -1,16 +1,32 @@
-import { useQuery } from '@tanstack/react-query';
+import { useEffect, useState } from 'react';
 import {
   fetchLinkPreview,
   type LinkPreviewData,
-} from '@/services/api/linkPreview';
+} from '@/shared/utils/linkPreview';
 
 export function useLinkPreview(url: string | null) {
-  return useQuery<LinkPreviewData>({
-    queryKey: ['link-preview', url],
-    queryFn: () => fetchLinkPreview(url!),
-    enabled: !!url,
-    staleTime: 1000 * 60 * 60, // 1 hour — OG data rarely changes
-    gcTime: 1000 * 60 * 60 * 24, // 24 hours — keep in client cache
-    retry: false,
-  });
+  const [data, setData] = useState<LinkPreviewData | undefined>(undefined);
+  const [isLoading, setIsLoading] = useState(!!url);
+
+  useEffect(() => {
+    if (!url) {
+      setData(undefined);
+      setIsLoading(false);
+      return;
+    }
+    let cancelled = false;
+    setIsLoading(true);
+    fetchLinkPreview(url)
+      .then((d) => {
+        if (!cancelled) setData(d);
+      })
+      .finally(() => {
+        if (!cancelled) setIsLoading(false);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [url]);
+
+  return { data, isLoading };
 }

@@ -12,7 +12,7 @@ import {
   GlowBorder,
   useGlowTarget,
   useOnboardingUIStore,
-} from '@/features/onboarding';
+} from '@/shared/ui/onboardingDock';
 
 /**
  * BottomNavigationMenu — toolbar

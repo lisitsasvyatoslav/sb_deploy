@@ -14,7 +14,7 @@ import type { Editor } from '@tiptap/core';
 import type { Node as ProseMirrorNode } from '@tiptap/pm/model';
 import { cn } from '@/shared/utils/cn';
 import { Icon } from '@/shared/ui/Icon/Icon';
-import { filesApi } from '@/services/api/files';
+import { filesApi } from '@/shared/mocks/filesApi';
 import Dialog from '@/shared/ui/Dialog/Dialog';
 import { useTranslation } from '@/shared/i18n/client';
 import type { FileAttachmentAttrs } from './FileAttachmentExtension';

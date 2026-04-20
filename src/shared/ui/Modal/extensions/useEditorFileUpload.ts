@@ -1,6 +1,6 @@
 import { useCallback, useRef } from 'react';
 import type { Editor } from '@tiptap/react';
-import { filesApi } from '@/services/api/files';
+import { filesApi } from '@/shared/mocks/filesApi';
 import { showErrorToast } from '@/shared/utils/toast';
 
 const FILE_ACCEPT = '.pdf,.doc,.docx,.xls,.xlsx,.csv,.txt,.zip,.rar,.tar,.gz';
